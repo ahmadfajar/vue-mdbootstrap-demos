@@ -1,0 +1,16 @@
+### Covers Operating resource files
+.DS_Store
+._.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+### Covers IDEs: IntelliJ, PhpStorm, WebStorm, Visual Studio Code
+/.idea/
+/.vscode
+
+### Covers project specific files
+node_modules/
+/build/
+npm-debug.log
+yarn-error.log
