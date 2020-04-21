@@ -1,5 +1,5 @@
 <template>
-  <div class="px-2 px-md-3 mt-2">
+  <section class="px-2 px-md-3 mt-2">
     <h2 class="display-4">
       Getting Started
     </h2>
@@ -38,7 +38,7 @@
       Now, you are ready to go. You can use any of <b>Vue MdBootstrap</b> components without
       using <span class="text-pink">import</span> statement again.
     </p>
-  </div>
+  </section>
 </template>
 
 <script>

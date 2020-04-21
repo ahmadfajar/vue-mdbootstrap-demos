@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-2 mx-md-4 mt-3 mt-md-4">
+  <section class="mx-2 mx-md-4 my-3 my-md-4">
     <bs-card shadow>
       <bs-card-header>Basic Alert Examples</bs-card-header>
       <bs-card-body>
@@ -70,7 +70,7 @@
         </div>
       </bs-card-body>
     </bs-card>
-  </div>
+  </section>
 </template>
 
 <script>

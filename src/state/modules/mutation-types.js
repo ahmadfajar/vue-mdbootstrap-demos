@@ -1,0 +1,12 @@
+export const SET_PAGE_TITLE   = 'SET_PAGE_TITLE';
+export const GET_PAGE_TITLE   = 'GET_PAGE_TITLE';
+export const STATE_ERROR      = 'ERROR';
+export const STATE_SUCCESS    = 'SUCCESS';
+export const FETCH            = 'fetch';
+export const SAVE             = 'save';
+export const DELETE           = 'delete';
+export const DESTROY          = 'destroy';
+export const ASSIGN_VALUE     = 'assignValue';
+export const ASSIGN_VALUES    = 'assignValues';
+export const CLEAR_COLLECTION = 'clearList';
+export const FETCH_COLLECTION = 'fetchList';

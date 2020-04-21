@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueMdb, { AxiosPlugin } from "vue-mdbootstrap";
 import router from "./router";
+import store from "./state";
 import App from "./App.vue";
 
 Vue.use(VueMdb);
@@ -10,5 +11,6 @@ Vue.use(AxiosPlugin);
 new Vue({
     el: '#app',
     router,
+    store,
     components: {App},
 });

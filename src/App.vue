@@ -11,7 +11,7 @@
                  @click="menuBarClick">
         <bs-icon icon="menu_bars" size="24" />
       </bs-button>
-      <bs-appbar-title title="Getting Started" class="text-white" />
+      <bs-appbar-title :title="pageTitle" class="text-white" />
       <bs-spacer />
       <bs-appbar-items>
         <bs-button mode="icon"
@@ -27,11 +27,17 @@
       </bs-appbar-items>
     </bs-appbar>
 
-    <bs-side-drawer :mini="sideDrawerState === 'mini'"
+    <bs-side-drawer width="250"
+                    :mini="sideDrawerState === 'mini'"
                     :open="sideDrawerState === 'open'"
-                    shadow
                     @open="toggleDrawer">
       <bs-list-view>
+        <bs-list-tile tag="div" class="pt-0">
+          <img src="vue.png"
+               class="mx-auto d-block"
+               style="width: 100px"
+               alt="" />
+        </bs-list-tile>
         <bs-list-tile path="/home">
           <bs-list-tile-content>
             <bs-list-tile-title>Getting Started</bs-list-tile-title>
@@ -43,17 +49,22 @@
             <bs-list-tile-title>Alert</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile path="/button">
+        <bs-list-tile path="/avatars">
           <bs-list-tile-content>
             <bs-list-tile-title>Avatar</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile path="/button">
+        <bs-list-tile path="/image-holders">
+          <bs-list-tile-content>
+            <bs-list-tile-title>Image Holder</bs-list-tile-title>
+          </bs-list-tile-content>
+        </bs-list-tile>
+        <bs-list-tile path="/badges">
           <bs-list-tile-content>
             <bs-list-tile-title>Badge</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile path="/button">
+        <bs-list-tile path="/icons">
           <bs-list-tile-content>
             <bs-list-tile-title>Icon</bs-list-tile-title>
           </bs-list-tile-content>
@@ -73,9 +84,19 @@
             <bs-list-tile-title>Button Dropdown</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile path="/button">
+        <bs-list-tile path="/cards">
           <bs-list-tile-content>
             <bs-list-tile-title>Card</bs-list-tile-title>
+          </bs-list-tile-content>
+        </bs-list-tile>
+        <bs-list-tile path="/datalist">
+          <bs-list-tile-content>
+            <bs-list-tile-title>Data List</bs-list-tile-title>
+          </bs-list-tile-content>
+        </bs-list-tile>
+        <bs-list-tile path="/button">
+          <bs-list-tile-content>
+            <bs-list-tile-title>Data Grid</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
         <bs-list-tile path="/button">
@@ -123,11 +144,6 @@
             <bs-list-tile-title>Tooltip</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile path="/button">
-          <bs-list-tile-content>
-            <bs-list-tile-title>DataGrid</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
       </bs-list-view>
 
       <bs-sidebar-footer>
@@ -160,6 +176,11 @@ export default {
     data: () => ({
         sideDrawerState: "open",
     }),
+    computed: {
+        pageTitle() {
+            return this.$route.meta ? this.$route.meta.title : 'Getting Started';
+        }
+    },
     methods: {
         menuBarClick() {
             if (this.$refs.appbar.isMobile && this.sideDrawerState !== 'close') {
