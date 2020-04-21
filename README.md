@@ -12,7 +12,7 @@ yarn install
 yarn dev
 ```
 
-Wait till the demos is finish compiled. Then you can point your browser to the address
+Wait till the demos compilation finished. Then you can point your browser to the address
 `http://localhost/mdbootstrap-demo`.
 
 Oh, btw, u can make this demos as your own playground too. Have a nice try. 
