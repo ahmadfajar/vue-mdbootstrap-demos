@@ -28,6 +28,18 @@ const routes = [{
     component: viewResolver('Icons'),
     meta: {title: 'Icon'}
 }, {
+    path: '/buttons',
+    component: viewResolver('Buttons'),
+    meta: {title: 'Button'}
+}, {
+    path: '/button-groups',
+    component: viewResolver('ButtonGroups'),
+    meta: {title: 'Button Group'}
+}, {
+    path: '/dropdowns',
+    component: viewResolver('DropdownMenus'),
+    meta: {title: 'Dropdown Menu'}
+}, {
     path: '/cards',
     component: viewResolver('Cards'),
     meta: {title: 'Card'}

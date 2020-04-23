@@ -13,7 +13,9 @@
                   <bs-list-tile-subtitle v-html="item.subtitle" class="text-muted" />
                 </bs-list-tile-content>
               </bs-list-tile>
-              <bs-divider v-if="index + 1 < items.length" :key="item.title + index" />
+              <bs-divider v-if="index + 1 < items.length"
+                          left-indent="80"
+                          :key="item.title + index" />
             </template>
           </bs-list-view>
           <bs-card-body>
@@ -29,10 +31,11 @@
       </div>
       <div class="col-md-6">
         <bs-card shadow>
-          <bs-list-view>
+          <bs-list-view color="unique-color-dark">
             <bs-subheader>
               Recent Chat
               <bs-menu class="ml-auto"
+                       color="default-color-dark"
                        placement="bottom-right">
                 <bs-button color="secondary"
                            class="ml-auto"
@@ -40,7 +43,7 @@
                            flat>
                   <bs-icon icon="MoreVert" size="24" />
                 </bs-button>
-                <bs-list-view slot="content">
+                <bs-list-view color="default-color-dark" slot="content">
                   <bs-list-tile>
                     <bs-list-tile-title>Refresh</bs-list-tile-title>
                   </bs-list-tile>
@@ -68,11 +71,12 @@
                                      :class="{'text-teal':item.active, 'text-grey-500': !item.active}" />
                 </bs-list-tile-action>
               </bs-list-tile>
-              <bs-divider v-if="index + 1 < chats1.length" :key="item.title + index" />
+              <bs-divider v-if="index + 1 < chats1.length"
+                          left-indent="80"
+                          :key="item.title + index" />
             </template>
           </bs-list-view>
-          <bs-divider />
-          <bs-list-view>
+          <bs-list-view color="unique-color-dark">
             <bs-subheader>Previous Chat</bs-subheader>
             <template v-for="(item, index) in chats2">
               <bs-list-tile :key="item.title">

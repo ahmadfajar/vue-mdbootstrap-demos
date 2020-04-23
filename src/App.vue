@@ -69,19 +69,19 @@
             <bs-list-tile-title>Icon</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile path="/button">
+        <bs-list-tile path="/buttons">
           <bs-list-tile-content>
             <bs-list-tile-title>Button</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile path="/button">
+        <bs-list-tile path="/button-groups">
           <bs-list-tile-content>
             <bs-list-tile-title>Button Group</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile path="/button">
+        <bs-list-tile path="/dropdowns">
           <bs-list-tile-content>
-            <bs-list-tile-title>Button Dropdown</bs-list-tile-title>
+            <bs-list-tile-title>Dropdown Menu</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
         <bs-list-tile path="/cards">
@@ -94,52 +94,52 @@
             <bs-list-tile-title>Data List</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile path="/button">
+        <bs-list-tile>
           <bs-list-tile-content>
             <bs-list-tile-title>Data Grid</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile path="/button">
+        <bs-list-tile>
           <bs-list-tile-content>
             <bs-list-tile-title>TextField</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile path="/button">
+        <bs-list-tile>
           <bs-list-tile-content>
             <bs-list-tile-title>TextArea</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile path="/button">
+        <bs-list-tile>
           <bs-list-tile-content>
             <bs-list-tile-title>ComboBox</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile path="/button">
+        <bs-list-tile>
           <bs-list-tile-content>
             <bs-list-tile-title>DateTime Fields</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile path="/button">
+        <bs-list-tile>
           <bs-list-tile-content>
             <bs-list-tile-title>Select Controls</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile path="/button">
+        <bs-list-tile>
           <bs-list-tile-content>
             <bs-list-tile-title>Validation Forms</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile path="/button">
+        <bs-list-tile>
           <bs-list-tile-content>
             <bs-list-tile-title>Modals</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile path="/button">
+        <bs-list-tile>
           <bs-list-tile-content>
             <bs-list-tile-title>Notification</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile path="/button">
+        <bs-list-tile>
           <bs-list-tile-content>
             <bs-list-tile-title>Tooltip</bs-list-tile-title>
           </bs-list-tile-content>

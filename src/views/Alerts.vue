@@ -6,17 +6,35 @@
         <div class="row">
           <div class="col-12 col-lg-4">
             <bs-alert color="primary">
-              A simple primary alert
+              An alert with primary color
             </bs-alert>
           </div>
           <div class="col-12 col-lg-4">
             <bs-alert color="success">
-              A simple success alert
+              An alert with success color
             </bs-alert>
           </div>
           <div class="col-12 col-lg-4">
             <bs-alert color="danger">
-              A simple danger alert
+              An alert with danger color
+            </bs-alert>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <bs-alert color="primary" outlined>
+              An outline alert with primary color
+            </bs-alert>
+          </div>
+          <div class="col-12 col-lg-4">
+            <bs-alert color="success" outlined>
+              An outline alert with success color
+            </bs-alert>
+          </div>
+          <div class="col-12 col-lg-4">
+            <bs-alert color="danger" outlined>
+              An outline alert with danger color
             </bs-alert>
           </div>
         </div>
@@ -57,7 +75,7 @@
 
           <div class="col-12 col-lg-6 mt-3 mt-lg-0">
             <bs-alert v-model="showDismissibleAlert"
-                      color="brown"
+                      color="teal"
                       transition="fade"
                       dismissable
                       @input="showDismissibleAlert=false">
