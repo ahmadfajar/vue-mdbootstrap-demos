@@ -30,7 +30,7 @@
         </div>
         <div class="col-12 col-md-6 col-xl">
           <bs-menu class="w-100 mt-3 mt-md-0" color="deep-purple">
-            <bs-button color="purple"
+            <bs-button color="indigo"
                        block
                        dropdown-toggle
                        raised>
@@ -58,7 +58,7 @@
         </div>
         <div class="col-12 col-md-6 col-xl">
           <bs-menu class="w-100 mt-3 mt-xl-0" color="primary-color-dark">
-            <bs-button color="indigo"
+            <bs-button color="purple"
                        block
                        dropdown-toggle
                        raised>
@@ -465,7 +465,7 @@
       <bs-card-body class="row">
         <div class="col-12 col-md-6 col-xl-3">
           <bs-menu v-model="popover"
-                   placement="right-bottom"
+                   placement="top"
                    :content-click-close="false">
             <bs-button color="blue" raised>
               Advance Dropdown

@@ -32,9 +32,17 @@ const routes = [{
     component: viewResolver('Buttons'),
     meta: {title: 'Button'}
 }, {
+    path: '/button-icons',
+    component: viewResolver('ButtonIcons'),
+    meta: {title: 'Button Icon'}
+}, {
     path: '/button-groups',
     component: viewResolver('ButtonGroups'),
     meta: {title: 'Button Group'}
+}, {
+    path: '/button-toggles',
+    component: viewResolver('ButtonToggles'),
+    meta: {title: 'Button Toggle'}
 }, {
     path: '/dropdowns',
     component: viewResolver('DropdownMenus'),
@@ -47,6 +55,30 @@ const routes = [{
     path: '/datalist',
     component: viewResolver('DataList'),
     meta: {title: 'Data List'}
+}, {
+    path: '/select-controls',
+    component: viewResolver('SelectControls'),
+    meta: {title: 'Select Controls'}
+}, {
+    path: '/progress-controls',
+    component: viewResolver('ProgressControls'),
+    meta: {title: 'Progress Controls'}
+}, {
+    path: '/modals',
+    component: viewResolver('Modals'),
+    meta: {title: 'Modal'}
+}, {
+    path: '/lightbox',
+    component: viewResolver('LightBoxes'),
+    meta: {title: 'LightBox'}
+}, {
+    path: '/notifications',
+    component: viewResolver('Notifications'),
+    meta: {title: 'Notification'}
+}, {
+    path: '/tooltips',
+    component: viewResolver('Tooltips'),
+    meta: {title: 'Tooltip'}
 }];
 
 export default routes;

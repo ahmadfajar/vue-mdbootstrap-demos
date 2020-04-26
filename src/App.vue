@@ -15,6 +15,12 @@
       <bs-spacer />
       <bs-appbar-items>
         <bs-button mode="icon"
+                   color="light-grey"
+                   href="https://github.com/ahmadfajar/vue-mdbootstrap"
+                   flat>
+          <bs-avatar img-src="avatar/github-light.png" size="22" circle />
+        </bs-button>
+        <bs-button mode="icon"
                    icon="bell"
                    icon-size="lg"
                    color="light-grey"
@@ -74,9 +80,19 @@
             <bs-list-tile-title>Button</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
+        <bs-list-tile path="/button-icons">
+          <bs-list-tile-content>
+            <bs-list-tile-title>Button Icon</bs-list-tile-title>
+          </bs-list-tile-content>
+        </bs-list-tile>
         <bs-list-tile path="/button-groups">
           <bs-list-tile-content>
             <bs-list-tile-title>Button Group</bs-list-tile-title>
+          </bs-list-tile-content>
+        </bs-list-tile>
+        <bs-list-tile path="/button-toggles">
+          <bs-list-tile-content>
+            <bs-list-tile-title>Button Toggle</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
         <bs-list-tile path="/dropdowns">
@@ -119,7 +135,7 @@
             <bs-list-tile-title>DateTime Fields</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile>
+        <bs-list-tile path="/select-controls">
           <bs-list-tile-content>
             <bs-list-tile-title>Select Controls</bs-list-tile-title>
           </bs-list-tile-content>
@@ -129,17 +145,27 @@
             <bs-list-tile-title>Validation Forms</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile>
+        <bs-list-tile path="/progress-controls">
           <bs-list-tile-content>
-            <bs-list-tile-title>Modals</bs-list-tile-title>
+            <bs-list-tile-title>Progress Controls</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile>
+        <bs-list-tile path="/modals">
+          <bs-list-tile-content>
+            <bs-list-tile-title>Modal</bs-list-tile-title>
+          </bs-list-tile-content>
+        </bs-list-tile>
+        <bs-list-tile path="/lightbox">
+          <bs-list-tile-content>
+            <bs-list-tile-title>LightBox</bs-list-tile-title>
+          </bs-list-tile-content>
+        </bs-list-tile>
+        <bs-list-tile path="/notifications">
           <bs-list-tile-content>
             <bs-list-tile-title>Notification</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile>
+        <bs-list-tile path="/tooltips">
           <bs-list-tile-content>
             <bs-list-tile-title>Tooltip</bs-list-tile-title>
           </bs-list-tile-content>
@@ -162,7 +188,9 @@
     </bs-side-drawer>
 
     <bs-content tag="main" class="bg-grey-200" app>
-      <router-view />
+      <transition name="fade" mode="out-in">
+        <router-view />
+      </transition>
     </bs-content>
   </bs-app-container>
 </template>
