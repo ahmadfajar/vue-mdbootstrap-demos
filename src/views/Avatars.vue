@@ -8,7 +8,7 @@
             <bs-card-body>
               <bs-avatar class="m-2"
                          size="72"
-                         img-src="avatar/kitty-1.jpg"
+                         img-src="assets/kitty-1.jpg"
                          circle />
               <bs-avatar size="72"
                          class="bg-teal text-white m-2"
@@ -30,7 +30,7 @@
             <bs-card-body>
               <bs-avatar class="m-2"
                          size="72"
-                         img-src="avatar/kitty-2.jpg"
+                         img-src="assets/kitty-2.jpg"
                          rounded />
               <bs-avatar size="72"
                          class="bg-teal text-white m-2"
@@ -52,7 +52,7 @@
             <bs-card-body>
               <bs-avatar class="m-2"
                          size="72"
-                         img-src="avatar/kitty-1.jpg" />
+                         img-src="assets/kitty-1.jpg" />
               <bs-avatar size="72"
                          class="bg-teal text-white m-2"
                          icon="bs-create_folder" />
@@ -74,7 +74,7 @@
           <bs-list-view>
             <bs-list-tile>
               <bs-list-tile-leading size="42">
-                <bs-avatar img-src="avatar/kitty-2.jpg"
+                <bs-avatar img-src="assets/kitty-2.jpg"
                            size="40"
                            circle />
               </bs-list-tile-leading>

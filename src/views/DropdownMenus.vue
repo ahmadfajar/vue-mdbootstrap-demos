@@ -559,8 +559,8 @@ export default {
     components: {FontAwesomeIcon},
     data: () => ({
         active: true,
-        avatar: 'avatar/2.jpg',
-        kitty: 'avatar/kitty-2.jpg',
+        avatar: 'assets/2.jpg',
+        kitty: 'assets/kitty-2.jpg',
         enableMessage: false,
         enableHints: true,
         popover: false,

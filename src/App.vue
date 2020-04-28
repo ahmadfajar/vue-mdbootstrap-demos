@@ -18,7 +18,7 @@
                    color="light-grey"
                    href="https://github.com/ahmadfajar/vue-mdbootstrap"
                    flat>
-          <bs-avatar img-src="avatar/github-light.png" size="22" circle />
+          <bs-avatar img-src="assets/GitHub-Light.png" size="22" circle />
         </bs-button>
         <bs-button mode="icon"
                    icon="bell"
@@ -39,7 +39,7 @@
                     @open="toggleDrawer">
       <bs-list-view>
         <bs-list-tile tag="div" class="pt-0">
-          <img src="vue.png"
+          <img src="assets/vue.png"
                class="mx-auto d-block"
                style="width: 100px"
                alt="" />
@@ -148,6 +148,11 @@
         <bs-list-tile path="/progress-controls">
           <bs-list-tile-content>
             <bs-list-tile-title>Progress Controls</bs-list-tile-title>
+          </bs-list-tile-content>
+        </bs-list-tile>
+        <bs-list-tile path="/tabs">
+          <bs-list-tile-content>
+            <bs-list-tile-title>Tabs</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
         <bs-list-tile path="/modals">

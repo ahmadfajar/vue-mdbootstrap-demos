@@ -101,41 +101,41 @@ export default {
     name: "DataList",
     components: {FontAwesomeIcon},
     data: () => ({
-        avatar: 'avatar/2.jpg',
+        avatar: 'assets/2.jpg',
         enableMessage: false,
         enableHints: true,
         popover: false,
         goHome: '#/home',
         items: [
             {
-                avatar: 'avatar/1.jpg',
+                avatar: 'assets/1.jpg',
                 title: 'Brunch this weekend?',
                 subtitle: "Ali Connors &#8212; I'll be in your neighborhood doing errands this weekend. Do you want to hang out?"
             },
             {
-                avatar: 'avatar/2.jpg',
+                avatar: 'assets/2.jpg',
                 title: 'Summer BBQ <small>4</small>',
                 subtitle: "to Alex, Scott, Jennifer &mdash; Wish I could come, but I'm out of town this weekend."
             },
             {
-                avatar: 'avatar/3.jpg',
+                avatar: 'assets/3.jpg',
                 title: 'Oui oui',
                 subtitle: "Sandra Adams &mdash; Do you have Paris recommendations? Have you ever been?"
             },
             {
-                avatar: 'avatar/4.jpg',
+                avatar: 'assets/4.jpg',
                 title: 'Birthday gift',
                 subtitle: "Trevor Hansen &mdash; Have any ideas about what we should get Heidi for her birthday?"
             }
         ],
         chats1: [
-            {active: true, title: 'Jason Oner', avatar: 'avatar/1.jpg'},
-            {active: true, title: 'Ranee Carlson', avatar: 'avatar/2.jpg'},
-            {title: 'Cindy Baker', avatar: 'avatar/3.jpg'},
-            {title: 'Ali Connors', avatar: 'avatar/4.jpg'}
+            {active: true, title: 'Jason Oner', avatar: 'assets/1.jpg'},
+            {active: true, title: 'Ranee Carlson', avatar: 'assets/2.jpg'},
+            {title: 'Cindy Baker', avatar: 'assets/3.jpg'},
+            {title: 'Ali Connors', avatar: 'assets/4.jpg'}
         ],
         chats2: [
-            {title: 'Travis Howard', avatar: 'avatar/5.jpg'}
+            {title: 'Travis Howard', avatar: 'assets/5.jpg'}
         ],
     }),
 }

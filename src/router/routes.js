@@ -64,6 +64,10 @@ const routes = [{
     component: viewResolver('ProgressControls'),
     meta: {title: 'Progress Controls'}
 }, {
+    path: '/tabs',
+    component: viewResolver('Tabs'),
+    meta: {title: 'Tabs'}
+}, {
     path: '/modals',
     component: viewResolver('Modals'),
     meta: {title: 'Modal'}
