@@ -75,22 +75,22 @@
             <bs-list-tile-title>Icon</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile path="/buttons">
+        <bs-list-tile path="/button/buttons">
           <bs-list-tile-content>
             <bs-list-tile-title>Button</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile path="/button-icons">
+        <bs-list-tile path="/button/icons">
           <bs-list-tile-content>
             <bs-list-tile-title>Button Icon</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile path="/button-groups">
+        <bs-list-tile path="/button/groups">
           <bs-list-tile-content>
             <bs-list-tile-title>Button Group</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile path="/button-toggles">
+        <bs-list-tile path="/button/toggles">
           <bs-list-tile-content>
             <bs-list-tile-title>Button Toggle</bs-list-tile-title>
           </bs-list-tile-content>
@@ -117,15 +117,20 @@
         </bs-list-tile>
         <bs-list-tile>
           <bs-list-tile-content>
+            <bs-list-tile-title>DateTimePicker</bs-list-tile-title>
+          </bs-list-tile-content>
+        </bs-list-tile>
+        <bs-list-tile path="/form/text-field">
+          <bs-list-tile-content>
             <bs-list-tile-title>TextField</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile>
+        <bs-list-tile path="/form/text-area">
           <bs-list-tile-content>
             <bs-list-tile-title>TextArea</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile>
+        <bs-list-tile path="/form/selects">
           <bs-list-tile-content>
             <bs-list-tile-title>ComboBox</bs-list-tile-title>
           </bs-list-tile-content>
@@ -135,7 +140,7 @@
             <bs-list-tile-title>DateTime Fields</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile path="/select-controls">
+        <bs-list-tile path="/form/controls">
           <bs-list-tile-content>
             <bs-list-tile-title>Select Controls</bs-list-tile-title>
           </bs-list-tile-content>

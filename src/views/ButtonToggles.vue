@@ -21,7 +21,7 @@
           <div class="col-md-10">
             <bs-button-toggle v-model="selectedWeather"
                               :items="weathers"
-                              color="light-blue"
+                              color="info"
                               toggle-color="indigo"
                               icon-position="right" />
           </div>
@@ -45,7 +45,7 @@
           <div class="col-md-10">
             <bs-button-toggle v-model="selectedWeather"
                               :items="weathers"
-                              color="light-blue"
+                              color="info"
                               toggle-color="indigo"
                               icon-position="left"
                               readonly />
@@ -95,6 +95,7 @@
           <div class="col-md-10">
             <bs-button-toggle v-model="selectedWeather"
                               :items="weathers"
+                              color="info"
                               toggle-color="indigo"
                               icon-position="right"
                               raised />
@@ -119,6 +120,7 @@
           <div class="col-md-10">
             <bs-button-toggle v-model="selectedWeather"
                               :items="weathers"
+                              color="info"
                               toggle-color="indigo"
                               icon-position="right"
                               outlined />
@@ -143,6 +145,7 @@
           <div class="col-md-10">
             <bs-button-toggle v-model="selectedWeather"
                               :items="weathers"
+                              color="info"
                               toggle-color="indigo"
                               icon-position="right"
                               flat />

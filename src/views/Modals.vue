@@ -13,7 +13,7 @@
             Show True modal
           </bs-button>
         </div>
-        <div class="col-12 col-md-6 col-xl mt-3 mt-md-0">
+        <div class="col-12 col-md-6 col-xl mt-3 mt-xl-0">
           <bs-button color="info" @click="scrollableModalVisible = true">
             Show long content modal
           </bs-button>

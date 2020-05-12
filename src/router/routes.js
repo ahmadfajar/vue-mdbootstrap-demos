@@ -28,19 +28,19 @@ const routes = [{
     component: viewResolver('Icons'),
     meta: {title: 'Icon'}
 }, {
-    path: '/buttons',
+    path: '/button/buttons',
     component: viewResolver('Buttons'),
     meta: {title: 'Button'}
 }, {
-    path: '/button-icons',
+    path: '/button/icons',
     component: viewResolver('ButtonIcons'),
     meta: {title: 'Button Icon'}
 }, {
-    path: '/button-groups',
+    path: '/button/groups',
     component: viewResolver('ButtonGroups'),
     meta: {title: 'Button Group'}
 }, {
-    path: '/button-toggles',
+    path: '/button/toggles',
     component: viewResolver('ButtonToggles'),
     meta: {title: 'Button Toggle'}
 }, {
@@ -56,7 +56,19 @@ const routes = [{
     component: viewResolver('DataList'),
     meta: {title: 'Data List'}
 }, {
-    path: '/select-controls',
+    path: '/form/text-field',
+    component: viewResolver('TextFields'),
+    meta: {title: 'TextField'}
+}, {
+    path: '/form/text-area',
+    component: viewResolver('TextAreas'),
+    meta: {title: 'TextArea'}
+}, {
+    path: '/form/selects',
+    component: viewResolver('ComboBoxes'),
+    meta: {title: 'ComboBox'}
+}, {
+    path: '/form/controls',
     component: viewResolver('SelectControls'),
     meta: {title: 'Select Controls'}
 }, {

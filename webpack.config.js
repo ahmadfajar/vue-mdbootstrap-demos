@@ -48,18 +48,16 @@ Encore
     // .enableVersioning(Encore.isProduction())
 
     // enables @babel/preset-env polyfills
-    .configureBabel(() => ({
-        presets: [
-            ["@babel/preset-env"]
-        ],
-        plugins: [
-            ["@babel/plugin-transform-runtime", {corejs: 3}]
-        ],
-    }))
-    .configureCssLoader(() => ({
-        import: true,
-        modules: "global",
-    }))
+    .configureBabel((config) => {
+        config.plugins.push(['@babel/plugin-transform-runtime', {corejs: 3}]);
+    }, {
+        corejs: 3,
+        useBuiltIns: 'entry'
+    })
+    .configureCssLoader((config) => {
+        config.import = true;
+        config.modules = "global";
+    })
     // enables Sass/SCSS support
     .enableSassLoader()
     .enableVueLoader();
