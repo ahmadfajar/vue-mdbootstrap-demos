@@ -56,6 +56,10 @@ const routes = [{
     component: viewResolver('DataList'),
     meta: {title: 'Data List'}
 }, {
+    path: '/picker/datetime',
+    component: viewResolver('DateTimePickers'),
+    meta: {title: 'DateTime Picker'}
+}, {
     path: '/form/text-field',
     component: viewResolver('TextFields'),
     meta: {title: 'TextField'}
@@ -67,6 +71,10 @@ const routes = [{
     path: '/form/selects',
     component: viewResolver('ComboBoxes'),
     meta: {title: 'ComboBox'}
+}, {
+    path: '/form/date-field',
+    component: viewResolver('DateTimeFields'),
+    meta: {title: 'DateTime Field'}
 }, {
     path: '/form/controls',
     component: viewResolver('SelectControls'),

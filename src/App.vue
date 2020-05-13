@@ -115,9 +115,9 @@
             <bs-list-tile-title>Data Grid</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile>
+        <bs-list-tile path="/picker/datetime">
           <bs-list-tile-content>
-            <bs-list-tile-title>DateTimePicker</bs-list-tile-title>
+            <bs-list-tile-title>DateTime Picker</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
         <bs-list-tile path="/form/text-field">
@@ -135,9 +135,9 @@
             <bs-list-tile-title>ComboBox</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile>
+        <bs-list-tile path="/form/date-field">
           <bs-list-tile-content>
-            <bs-list-tile-title>DateTime Fields</bs-list-tile-title>
+            <bs-list-tile-title>DateTime Field</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
         <bs-list-tile path="/form/controls">

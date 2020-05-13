@@ -46,7 +46,7 @@
             <div class="form-group">
               <bs-text-field v-model="regular2"
                              :placeholder="placeholder"
-                             help-text="Form field with clear button enabled."
+                             help-text="Text field with clear button enabled."
                              clear-button>
                 <label class="col-md-3 col-form-label" slot-scope="{ id }" :for="id">
                   Text Field
@@ -56,7 +56,7 @@
             <div class="form-group">
               <bs-text-field v-model="regular1"
                              prepend-icon="bullhorn"
-                             help-text="Form field with prepended icon.">
+                             help-text="Text field with prepended icon.">
                 <label class="col-md-3 col-form-label" slot-scope="{ id }" :for="id">
                   Text Field
                 </label>
@@ -65,7 +65,7 @@
             <div class="form-group">
               <bs-text-field v-model="regular1"
                              append-icon="building"
-                             help-text="Form field with appended icon.">
+                             help-text="Text field with appended icon.">
                 <label class="col-md-3 col-form-label" slot-scope="{ id }" :for="id">
                   Text Field
                 </label>
@@ -109,7 +109,7 @@
             </div>
             <div class="form-group">
               <bs-text-field v-model="regular2"
-                             help-text="Form field with clear button enabled."
+                             help-text="Text field with clear button enabled."
                              floating-label
                              clear-button>
                 <label slot-scope="{ id }" :for="id">
@@ -120,7 +120,7 @@
             <div class="form-group">
               <bs-text-field v-model="regular3"
                              prepend-icon="bullhorn"
-                             help-text="Form field with prepended icon."
+                             help-text="Text field with prepended icon."
                              floating-label>
                 <label slot-scope="{ id }" :for="id">
                   Text Field
@@ -130,7 +130,7 @@
             <div class="form-group">
               <bs-text-field v-model="regular3"
                              append-icon="building"
-                             help-text="Form field with appended icon."
+                             help-text="Text field with appended icon."
                              floating-label>
                 <label slot-scope="{ id }" :for="id">
                   Text Field
@@ -176,7 +176,7 @@
             </div>
             <div class="form-group">
               <bs-text-field v-model="regular2"
-                             help-text="Form field with clear button enabled."
+                             help-text="Text field with clear button enabled."
                              floating-label
                              outlined
                              clear-button>
@@ -188,7 +188,7 @@
             <div class="form-group">
               <bs-text-field v-model="regular4"
                              prepend-icon="bullhorn"
-                             help-text="Form field with prepended icon."
+                             help-text="Text field with prepended icon."
                              floating-label
                              outlined>
                 <label slot-scope="{ id }" :for="id">
@@ -199,7 +199,7 @@
             <div class="form-group">
               <bs-text-field v-model="regular4"
                              append-icon="building"
-                             help-text="Form field with appended icon."
+                             help-text="Text field with appended icon."
                              floating-label
                              outlined>
                 <label slot-scope="{ id }" :for="id">
