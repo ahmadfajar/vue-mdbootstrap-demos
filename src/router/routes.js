@@ -80,6 +80,10 @@ const routes = [{
     component: viewResolver('SelectControls'),
     meta: {title: 'Select Controls'}
 }, {
+    path: '/form/validation',
+    component: viewResolver('ValidationForm'),
+    meta: {title: 'Validation Form'}
+}, {
     path: '/progress-controls',
     component: viewResolver('ProgressControls'),
     meta: {title: 'Progress Controls'}

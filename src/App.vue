@@ -145,9 +145,9 @@
             <bs-list-tile-title>Select Controls</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile>
+        <bs-list-tile path="/form/validation">
           <bs-list-tile-content>
-            <bs-list-tile-title>Validation Forms</bs-list-tile-title>
+            <bs-list-tile-title>Validation Form</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
         <bs-list-tile path="/progress-controls">

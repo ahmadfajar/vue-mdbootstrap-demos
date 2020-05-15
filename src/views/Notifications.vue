@@ -89,22 +89,22 @@ export default {
     }),
     methods: {
         showSuccessNotification() {
-            this.$notification.success('I am notification message...', 'Success Title')
+            this.$notification.success('I am notification message...', 'Success Title');
         },
         showInfoNotification() {
-            this.$notification.info('I am notification message...', 'Info Title')
+            this.$notification.info('I am notification message...', 'Info Title');
         },
         showWarningNotification() {
-            this.$notification.warning('I am notification message...', 'Warning Title')
+            this.$notification.warning('I am notification message...', 'Warning Title');
         },
         showErrorNotification() {
-            this.$notification.error('I am notification message...', 'Error Title')
+            this.$notification.error('I am notification message...', 'Error Title');
         },
         showCustomNotification(position) {
             let options = {
                 position: position,
                 message: 'I am notification message...'
-            }
+            };
             this.$notification.info(options, 'Info Title');
         }
     }

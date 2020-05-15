@@ -282,6 +282,8 @@ export default {
                 totalProperty: 'total',
                 // adapter: vm.$axios, -> optional, useful to override default instance
                 remoteSort: false,
+                remoteFilter: false,
+                filters: [{property: 'country', value: 'US', operator: 'eq'}],
                 restUrl: {
                     browse: './data/states.json'
                 }
@@ -289,10 +291,6 @@ export default {
         }
     }),
     computed: {},
-    // mounted() {
-    //     console.log('$http: ', this.$http);
-    //     console.log('$axios: ', this.$axios);
-    // },
     beforeDestroy() {
         this.peopleSrc.proxy.destroy();
         this.products.proxy.destroy();
