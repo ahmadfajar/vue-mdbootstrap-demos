@@ -56,6 +56,10 @@ const routes = [{
     component: viewResolver('DataList'),
     meta: {title: 'Data List'}
 }, {
+    path: '/data-grid',
+    component: viewResolver('DataGrid'),
+    meta: {title: 'Data Grid'}
+}, {
     path: '/picker/datetime',
     component: viewResolver('DateTimePickers'),
     meta: {title: 'DateTime Picker'}

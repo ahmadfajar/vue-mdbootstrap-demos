@@ -110,7 +110,7 @@
             <bs-list-tile-title>Data List</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
-        <bs-list-tile>
+        <bs-list-tile path="/data-grid">
           <bs-list-tile-content>
             <bs-list-tile-title>Data Grid</bs-list-tile-title>
           </bs-list-tile-content>
