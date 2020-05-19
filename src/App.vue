@@ -34,14 +34,15 @@
     </bs-appbar>
 
     <bs-side-drawer width="250"
+                    mini-width="70"
                     :mini="sideDrawerState === 'mini'"
                     :open="sideDrawerState === 'open'"
                     @open="toggleDrawer">
       <bs-list-view>
         <bs-list-tile tag="div" class="pt-0">
-          <img src="assets/vue.png"
-               class="mx-auto d-block"
-               style="width: 100px"
+          <img src="assets/vue-mdb.png"
+               class="mx-auto d-block logo"
+               :style="{width: sideDrawerState === 'mini' ? '28px' : '120px'}"
                alt="" />
         </bs-list-tile>
         <bs-list-tile path="/home">
@@ -113,6 +114,11 @@
         <bs-list-tile path="/data-grid">
           <bs-list-tile-content>
             <bs-list-tile-title>Data Grid</bs-list-tile-title>
+          </bs-list-tile-content>
+        </bs-list-tile>
+        <bs-list-tile path="/tree-grid">
+          <bs-list-tile-content>
+            <bs-list-tile-title>Tree Grid</bs-list-tile-title>
           </bs-list-tile-content>
         </bs-list-tile>
         <bs-list-tile path="/picker/datetime">
@@ -241,6 +247,10 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss">
+.md-list {
+  img.logo {
+    transition: all .3s ease-in-out;
+  }
+}
 </style>

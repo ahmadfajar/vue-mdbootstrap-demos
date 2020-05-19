@@ -7650,10 +7650,10 @@ vue-loader@^15.9.2:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
-vue-mdbootstrap@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/vue-mdbootstrap/-/vue-mdbootstrap-1.0.1.tgz#b53b0a59b5c6e971515c3dd530f46fbe2dc8dd8c"
-  integrity sha512-DgSpa/Si6IoGN2Y79B8K3ylmmwXHkdox2auANX8pcIPnh7NihIKPfXFuQjmk2hSuvWBuur1LTPaf8SLdw7M6mg==
+vue-mdbootstrap@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/vue-mdbootstrap/-/vue-mdbootstrap-1.0.3.tgz#2b3863335e681bfe24f6010da62fb537d66c5572"
+  integrity sha512-DkY8d7QVNwL6vxjnykjWXrCKJ4KBwM/3oprzjZUmx9884vy8WbAM3H+wuF/1hZE8BPJQ7nP7K+he/vvfRfEbCg==
   dependencies:
     "@fortawesome/fontawesome-svg-core" "^1.2.28"
     "@fortawesome/free-solid-svg-icons" "^5.13.0"
