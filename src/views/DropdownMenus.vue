@@ -535,11 +535,11 @@
                   </bs-switch>
                 </div>
                 <div class="mt-4 text-right">
-                  <bs-button color="primary" @click="showKitty = false" outlined>
-                    Save
-                  </bs-button>
                   <bs-button color="primary" @click="showKitty = false" flat>
                     Cancel
+                  </bs-button>
+                  <bs-button color="primary" @click="showKitty = false" outlined>
+                    Save
                   </bs-button>
                 </div>
               </div>
@@ -552,11 +552,8 @@
 </template>
 
 <script>
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-
 export default {
     name: "DropdownMenus",
-    components: {FontAwesomeIcon},
     data: () => ({
         active: true,
         avatar: 'assets/2.jpg',

@@ -212,11 +212,8 @@
 </template>
 
 <script>
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-
 export default {
     name: "App",
-    components: {FontAwesomeIcon},
     data: () => ({
         sideDrawerState: "open",
     }),

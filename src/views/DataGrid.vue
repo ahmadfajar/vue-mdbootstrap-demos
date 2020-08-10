@@ -42,7 +42,7 @@ export default {
             remotePaging: false, // default is TRUE
             remoteSort: false,   // default is TRUE
             sorts: [{property: 'text', direction: 'asc'}],
-            restUrl: {
+            restProxy: {
                 // Note: data is fetched from static sources. So, we must fine tune BsStore
                 // to make sorting, paging and filtering is done locally by BsStore.
                 // If you have working Backend API, the default values above can be ignored

@@ -269,7 +269,7 @@ export default {
                 totalProperty: 'total',
                 // adapter: vm.$axios, -> optional, useful to override default instance
                 remoteSort: false,
-                restUrl: {
+                restProxy: {
                     browse: './data/product.json'
                 }
             }),
@@ -284,13 +284,12 @@ export default {
                 remoteSort: false,
                 remoteFilter: false,
                 filters: [{property: 'country', value: 'US', operator: 'eq'}],
-                restUrl: {
+                restProxy: {
                     browse: './data/states.json'
                 }
             })
         }
     }),
-    computed: {},
     beforeDestroy() {
         this.peopleSrc.proxy.destroy();
         this.products.proxy.destroy();

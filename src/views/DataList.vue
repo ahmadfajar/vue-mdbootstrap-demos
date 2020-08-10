@@ -95,11 +95,8 @@
 </template>
 
 <script>
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-
 export default {
     name: "DataList",
-    components: {FontAwesomeIcon},
     data: () => ({
         avatar: 'assets/2.jpg',
         enableMessage: false,

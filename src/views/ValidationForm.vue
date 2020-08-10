@@ -112,7 +112,7 @@ export default {
                 dataProperty: 'data',
                 totalProperty: 'total',
                 remoteFilter: false,
-                restUrl: {
+                restProxy: {
                     browse: './data/states.json'
                 }
             }),
