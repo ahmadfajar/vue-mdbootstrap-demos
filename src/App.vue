@@ -1,191 +1,91 @@
 <template>
   <bs-app-container>
-    <bs-appbar ref="appbar"
-               class="bg-unique"
-               clipped-left
-               fixed-top
-               shadow>
-      <bs-button mode="icon"
-                 color="light-grey"
-                 flat
-                 @click="menuBarClick">
+    <bs-appbar
+      ref="appbar"
+      class="bg-unique"
+      clipped-left
+      fixed-top
+      shadow>
+      <bs-button
+        mode="icon"
+        color="light-grey d-xl-none"
+        flat
+        @click="menuBarClick">
         <bs-icon icon="menu_bars" size="24" />
       </bs-button>
       <bs-appbar-title :title="pageTitle" class="text-white" />
       <bs-spacer />
       <bs-appbar-items>
-        <bs-button mode="icon"
-                   color="light-grey"
-                   href="https://github.com/ahmadfajar/vue-mdbootstrap"
-                   flat>
-          <bs-avatar img-src="assets/GitHub-Light.png" size="22" circle />
+        <bs-button
+          color="light-grey"
+          flat
+          href="https://github.com/ahmadfajar/vue-mdbootstrap"
+          mode="icon"
+          target="_blank">
+          <bs-avatar
+            img-src="img/GitHub-Light.png"
+            size="22"
+            circle />
         </bs-button>
-        <bs-button mode="icon"
-                   icon="bell"
-                   icon-size="lg"
-                   color="light-grey"
-                   flat />
-        <bs-button mode="icon"
-                   icon="user"
-                   icon-size="lg"
-                   color="light-grey"
-                   flat />
+        <bs-button
+          color="light-grey"
+          flat
+          icon="bell"
+          icon-size="lg"
+          mode="icon" />
+        <bs-button
+          color="light-grey"
+          flat
+          icon="user"
+          icon-size="lg"
+          mode="icon" />
       </bs-appbar-items>
     </bs-appbar>
 
-    <bs-side-drawer width="250"
-                    mini-width="70"
-                    :mini="sideDrawerState === 'mini'"
-                    :open="sideDrawerState === 'open'"
-                    @open="toggleDrawer">
-      <bs-list-view>
-        <bs-list-tile tag="div" class="pt-0">
-          <img src="assets/vue-mdb.png"
-               class="mx-auto d-block logo"
-               :style="{width: sideDrawerState === 'mini' ? '28px' : '120px'}"
-               alt="" />
-        </bs-list-tile>
-        <bs-list-tile path="/home">
-          <bs-list-tile-content>
-            <bs-list-tile-title>Getting Started</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-subheader>COMPONENTS</bs-subheader>
-        <bs-list-tile path="/alerts">
-          <bs-list-tile-content>
-            <bs-list-tile-title>Alert</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-list-tile path="/avatars">
-          <bs-list-tile-content>
-            <bs-list-tile-title>Avatar</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-list-tile path="/image-holders">
-          <bs-list-tile-content>
-            <bs-list-tile-title>Image Holder</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-list-tile path="/badges">
-          <bs-list-tile-content>
-            <bs-list-tile-title>Badge</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-list-tile path="/icons">
-          <bs-list-tile-content>
-            <bs-list-tile-title>Icon</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-list-tile path="/button/buttons">
-          <bs-list-tile-content>
-            <bs-list-tile-title>Button</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-list-tile path="/button/icons">
-          <bs-list-tile-content>
-            <bs-list-tile-title>Button Icon</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-list-tile path="/button/groups">
-          <bs-list-tile-content>
-            <bs-list-tile-title>Button Group</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-list-tile path="/button/toggles">
-          <bs-list-tile-content>
-            <bs-list-tile-title>Button Toggle</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-list-tile path="/dropdowns">
-          <bs-list-tile-content>
-            <bs-list-tile-title>Dropdown Menu</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-list-tile path="/cards">
-          <bs-list-tile-content>
-            <bs-list-tile-title>Card</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-list-tile path="/datalist">
-          <bs-list-tile-content>
-            <bs-list-tile-title>Data List</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-list-tile path="/data-grid">
-          <bs-list-tile-content>
-            <bs-list-tile-title>Data Grid</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-list-tile path="/tree-grid">
-          <bs-list-tile-content>
-            <bs-list-tile-title>Tree Grid</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-list-tile path="/picker/datetime">
-          <bs-list-tile-content>
-            <bs-list-tile-title>DateTime Picker</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-list-tile path="/form/text-field">
-          <bs-list-tile-content>
-            <bs-list-tile-title>TextField</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-list-tile path="/form/text-area">
-          <bs-list-tile-content>
-            <bs-list-tile-title>TextArea</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-list-tile path="/form/selects">
-          <bs-list-tile-content>
-            <bs-list-tile-title>ComboBox</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-list-tile path="/form/date-field">
-          <bs-list-tile-content>
-            <bs-list-tile-title>DateTime Field</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-list-tile path="/form/controls">
-          <bs-list-tile-content>
-            <bs-list-tile-title>Select Controls</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-list-tile path="/form/validation">
-          <bs-list-tile-content>
-            <bs-list-tile-title>Validation Form</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-list-tile path="/progress-controls">
-          <bs-list-tile-content>
-            <bs-list-tile-title>Progress Controls</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-list-tile path="/tabs">
-          <bs-list-tile-content>
-            <bs-list-tile-title>Tabs</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-list-tile path="/modals">
-          <bs-list-tile-content>
-            <bs-list-tile-title>Modal</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-list-tile path="/lightbox">
-          <bs-list-tile-content>
-            <bs-list-tile-title>LightBox</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-list-tile path="/notifications">
-          <bs-list-tile-content>
-            <bs-list-tile-title>Notification</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
-        <bs-list-tile path="/tooltips">
-          <bs-list-tile-content>
-            <bs-list-tile-title>Tooltip</bs-list-tile-title>
-          </bs-list-tile-content>
-        </bs-list-tile>
+    <bs-side-drawer
+      :mini="sideDrawerState === 'mini'"
+      :open="sideDrawerState === 'open'"
+      color="white border-right"
+      mini-width="70"
+      width="250"
+      @open="toggleDrawer">
+      <img
+        :style="{width: sideDrawerState === 'mini' ? '40px' : '120px'}"
+        alt=""
+        class="mx-auto d-block logo"
+        src="img/vue-mdb.png" />
+      <bs-list-view active-item-bordered="left">
+        <bs-list-nav>
+          <bs-list-nav-item label="Getting Started" path="/home" />
+          <bs-list-nav-item label="COMPONENTS" disabled />
+          <bs-list-nav-item label="Alert" path="/alerts" />
+          <bs-list-nav-item label="Avatar" path="/avatars" />
+          <bs-list-nav-item label="Image Holder" path="/image-holders" />
+          <bs-list-nav-item label="Badge" path="/badges" />
+          <bs-list-nav-item label="Icon" path="/icons" />
+          <bs-list-nav-item label="Button" path="/button/buttons" />
+          <bs-list-nav-item label="Button Icon" path="/button/icons" />
+          <bs-list-nav-item label="Button Group" path="/button/groups" />
+          <bs-list-nav-item label="Button Toggle" path="/button/toggles" />
+          <bs-list-nav-item label="Dropdown Menu" path="/dropdowns" />
+          <bs-list-nav-item label="Card" path="/cards" />
+          <bs-list-nav-item label="Data List" path="/datalist" />
+          <bs-list-nav-item label="Data Grid" path="/data-grid" />
+          <bs-list-nav-item label="Tree Grid" path="/tree-grid" />
+          <bs-list-nav-item label="DateTime Picker" path="/picker/datetime" />
+          <bs-list-nav-item label="TextField" path="/form/text-field" />
+          <bs-list-nav-item label="TextArea" path="/form/text-area" />
+          <bs-list-nav-item label="ComboBox" path="/form/selects" />
+          <bs-list-nav-item label="DateTime Field" path="/form/date-field" />
+          <bs-list-nav-item label="Select Controls" path="/form/controls" />
+          <bs-list-nav-item label="Form Validation" path="/form/validation" />
+          <bs-list-nav-item label="Progress Controls" path="/progress-controls" />
+          <bs-list-nav-item label="Tabs" path="/tabs" />
+          <bs-list-nav-item label="Modal" path="/modals" />
+          <bs-list-nav-item label="LightBox" path="/lightbox" />
+          <bs-list-nav-item label="Notification" path="/notifications" />
+          <bs-list-nav-item label="Tooltip" path="/tooltips" />
+        </bs-list-nav>
       </bs-list-view>
 
       <bs-sidebar-footer>
@@ -203,7 +103,10 @@
       </bs-sidebar-footer>
     </bs-side-drawer>
 
-    <bs-content tag="main" class="bg-grey-200" app>
+    <bs-content
+      app
+      class="bg-grey-200"
+      tag="main">
       <transition name="fade" mode="out-in">
         <router-view />
       </transition>
@@ -245,9 +148,16 @@ export default {
 </script>
 
 <style lang="scss">
-.md-list {
-  img.logo {
-    transition: all .3s ease-in-out;
-  }
+.md-side-drawer {
+    .logo {
+        transition: all .3s ease-in-out;
+    }
+
+    &.md-mini {
+        .logo {
+            margin-bottom: 12px;
+            margin-top: 12px;
+        }
+    }
 }
 </style>

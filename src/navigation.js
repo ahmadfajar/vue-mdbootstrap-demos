@@ -1,6 +1,6 @@
-const viewResolver = (name) => require('../views/' + name).default;
+const viewResolver = (name) => require('./views/' + name).default;
 
-const routes = [{
+export const routes = [{
     path: '/',
     redirect: '/home'
 }, {
@@ -116,5 +116,3 @@ const routes = [{
     component: viewResolver('Tooltips'),
     meta: {title: 'Tooltip'}
 }];
-
-export default routes;

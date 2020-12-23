@@ -1,5 +1,5 @@
 <template>
-  <section class="mx-2 mx-md-4 my-3 my-md-4">
+  <section class="mx-2 mx-md-3 mx-xl-5 my-3 my-md-4">
     <div class="row">
       <div class="col-12 col-lg-6">
         <bs-card shadow>
@@ -163,28 +163,52 @@
             Actionable Badges
           </bs-card-header>
           <bs-card-body style="font-size: 1rem">
-            <bs-badge tag="a" href="#/badges" variant="primary">
+            <bs-badge 
+              tag="a"
+              href="#/badges"
+              variant="primary">
               Primary
             </bs-badge>
-            <bs-badge tag="a" href="#/badges" variant="secondary">
+            <bs-badge 
+              tag="a"
+              href="#/badges"
+              variant="secondary">
               Secondary
             </bs-badge>
-            <bs-badge tag="a" href="#/badges" variant="success">
+            <bs-badge 
+              tag="a"
+              href="#/badges"
+              variant="success">
               Success
             </bs-badge>
-            <bs-badge tag="a" href="#/badges" variant="danger">
+            <bs-badge 
+              tag="a"
+              href="#/badges"
+              variant="danger">
               Danger
             </bs-badge>
-            <bs-badge tag="a" href="#/badges" variant="warning">
+            <bs-badge 
+              tag="a"
+              href="#/badges"
+              variant="warning">
               Warning
             </bs-badge>
-            <bs-badge tag="a" href="#/badges" variant="info">
+            <bs-badge 
+              tag="a"
+              href="#/badges"
+              variant="info">
               Info
             </bs-badge>
-            <bs-badge tag="a" href="#/badges" variant="light">
+            <bs-badge 
+              tag="a"
+              href="#/badges"
+              variant="light">
               Light
             </bs-badge>
-            <bs-badge tag="a" href="#/badges" variant="dark">
+            <bs-badge
+              tag="a"
+              href="#/badges"
+              variant="dark">
               Dark
             </bs-badge>
           </bs-card-body>
@@ -200,6 +224,10 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+.card-body {
+    .badge {
+        margin-right: 4px;
+    }
+}
 </style>

@@ -1,8 +1,14 @@
 <template>
-  <section class="mx-2 mx-md-4 my-3 my-md-4">
+  <section class="mx-2 mx-md-3 mx-xl-5 my-3 my-md-4">
     <bs-card shadow>
-      <bs-treegrid ref="treeGrid" :data-source="sources" row-hover>
-        <bs-treegrid-column label="ID" field="id" width="120" />
+      <bs-treegrid
+        ref="treeGrid"
+        :data-source="sources"
+        row-hover>
+        <bs-treegrid-column
+          label="ID"
+          field="id"
+          width="120" />
         <bs-treegrid-column label="Region" field="name" />
       </bs-treegrid>
     </bs-card>

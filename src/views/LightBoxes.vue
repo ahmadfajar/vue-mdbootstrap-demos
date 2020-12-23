@@ -1,5 +1,5 @@
 <template>
-  <section class="mx-2 mx-md-4 my-3 my-md-4">
+  <section class="mx-2 mx-md-3 mx-xl-5 my-3 my-md-4">
     <bs-card shadow>
       <bs-card-header>Single Image</bs-card-header>
       <bs-card-body class="text-center">
@@ -84,24 +84,22 @@
 
     <bs-lightbox
       ref="lightbox"
-      transition="slide-top-bottom"
-      transition-mode="out-in"
       :items="galleryItems"
       :open.sync="showGalleryItems"
       :overlay-opacity="0.9"
       :thumbnail-height="80">
       <bs-list-view slot="menubar" color="teal">
-        <bs-list-tile>
+        <bs-list-tile navigable>
           <bs-list-tile-title>Slideshow</bs-list-tile-title>
         </bs-list-tile>
-        <bs-list-tile>
+        <bs-list-tile navigable>
           <bs-list-tile-title>Add to album</bs-list-tile-title>
         </bs-list-tile>
-        <bs-list-tile>
+        <bs-list-tile navigable>
           <bs-list-tile-title>Shared picture</bs-list-tile-title>
         </bs-list-tile>
         <bs-divider />
-        <bs-list-tile>
+        <bs-list-tile navigable>
           <bs-list-tile-title>Send Feedback</bs-list-tile-title>
         </bs-list-tile>
       </bs-list-view>
@@ -117,32 +115,32 @@ export default {
         showGalleryItems: false,
         singleItem: [{
             thumbnail: 'https://unsplash.it/200.jpg?image=250',
-            imageFile: 'https://unsplash.it/1200/768.jpg?image=250',
+            imageSrc: 'https://unsplash.it/1200/768.jpg?image=250',
             title: 'Your image title'
         }],
         galleryItems: [{
             thumbnail: 'https://unsplash.it/200.jpg?image=251',
-            imageFile: 'https://unsplash.it/1200/768.jpg?image=251',
+            imageSrc: 'https://unsplash.it/1200/768.jpg?image=251',
             title: 'First image title'
         }, {
             thumbnail: 'https://unsplash.it/200.jpg?image=252',
-            imageFile: 'https://unsplash.it/1200/768.jpg?image=252',
+            imageSrc: 'https://unsplash.it/1200/768.jpg?image=252',
             title: 'Second image title'
         }, {
             thumbnail: 'https://unsplash.it/200.jpg?image=253',
-            imageFile: 'https://unsplash.it/1200/768.jpg?image=253',
+            imageSrc: 'https://unsplash.it/1200/768.jpg?image=253',
             title: 'Third image title'
         }, {
             thumbnail: 'https://unsplash.it/200.jpg?image=254',
-            imageFile: 'https://unsplash.it/1200/768.jpg?image=254',
+            imageSrc: 'https://unsplash.it/1200/768.jpg?image=254',
             title: 'Fourth image title'
         }, {
             thumbnail: 'https://unsplash.it/200.jpg?image=255',
-            imageFile: 'https://unsplash.it/1200/768.jpg?image=255',
+            imageSrc: 'https://unsplash.it/1200/768.jpg?image=255',
             title: 'Fifth image title'
         }, {
             thumbnail: 'https://unsplash.it/200.jpg?image=256',
-            imageFile: 'https://unsplash.it/1200/768.jpg?image=256',
+            imageSrc: 'https://unsplash.it/1200/768.jpg?image=256',
             title: 'Sixth image title'
         }],
     }),

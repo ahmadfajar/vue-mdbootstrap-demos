@@ -1,5 +1,5 @@
 <template>
-  <section class="mx-2 mx-md-4 my-3 my-md-4">
+  <section class="mx-2 mx-md-3 mx-xl-5 my-3 my-md-4">
     <bs-card shadow>
       <bs-card-header>Basic Alert Examples</bs-card-header>
       <bs-card-body>
@@ -39,8 +39,9 @@
           </div>
         </div>
 
-        <bs-alert color="purple"
-                  icon="exclamation-triangle">
+        <bs-alert 
+          color="purple"
+          icon="exclamation-triangle">
           <h5>Well done!</h5>
           <p>
             Aww yeah, you successfully read this important alert message. This is an example how to
@@ -58,15 +59,17 @@
       <bs-card-body>
         <div class="row">
           <div class="col-12 col-lg-6">
-            <bs-alert :value="dismissCountDown > 0"
-                      transition="fade"
-                      @input="dismissCountDown=0"
-                      dismissable>
+            <bs-alert 
+              :value="dismissCountDown > 0"
+              transition="fade"
+              @input="dismissCountDown=0"
+              dismissable>
               <p>This alert will dismiss after {{ dismissCountDown }} seconds...</p>
-              <bs-progress color="warning"
-                           mode="determinate"
-                           type="bar"
-                           :value="percentProgress" />
+              <bs-progress 
+                color="warning"
+                mode="determinate"
+                type="bar"
+                :value="percentProgress" />
             </bs-alert>
             <bs-button @click="showAlert">
               Show dismissable Alert
@@ -74,11 +77,12 @@
           </div>
 
           <div class="col-12 col-lg-6 mt-3 mt-lg-0">
-            <bs-alert v-model="showDismissibleAlert"
-                      color="teal"
-                      transition="fade"
-                      dismissable
-                      @input="showDismissibleAlert=false">
+            <bs-alert 
+              v-model="showDismissibleAlert"
+              color="teal"
+              transition="fade"
+              dismissable
+              @input="showDismissibleAlert=false">
               <p>This is a dismissable alert.</p>
             </bs-alert>
             <bs-button @click="showDismissibleAlert = !showDismissibleAlert">

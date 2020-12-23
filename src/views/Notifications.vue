@@ -1,25 +1,33 @@
 <template>
-  <section class="mx-2 mx-md-4 my-3 my-md-4">
+  <section class="mx-2 mx-md-3 mx-xl-5 my-3 my-md-4">
     <bs-card shadow>
       <bs-card-header>Standard Notifications</bs-card-header>
       <bs-card-body class="row">
         <div class="col-12 col-md-6 col-xl">
-          <bs-button color="success" @click="showSuccessNotification">
+          <bs-button
+            color="success" 
+            @click="showSuccessNotification">
             Show success notification
           </bs-button>
         </div>
         <div class="col-12 col-md-6 col-xl mt-3 mt-md-0">
-          <bs-button color="info" @click="showInfoNotification">
+          <bs-button
+            color="info" 
+            @click="showInfoNotification">
             Show info notification
           </bs-button>
         </div>
         <div class="col-12 col-md-6 col-xl mt-3 mt-xl-0">
-          <bs-button color="warning" @click="showWarningNotification">
+          <bs-button
+            color="warning" 
+            @click="showWarningNotification">
             Show warning notification
           </bs-button>
         </div>
         <div class="col-12 col-md-6 col-xl mt-3 mt-xl-0">
-          <bs-button color="danger" @click="showErrorNotification">
+          <bs-button
+            color="danger" 
+            @click="showErrorNotification">
             Show error notification
           </bs-button>
         </div>
@@ -31,44 +39,60 @@
       <bs-card-body>
         <div class="row">
           <div class="col-12 col-md-6 col-xl">
-            <bs-button color="info" @click="showCustomNotification('top-left')">
+            <bs-button
+              color="info" 
+              @click="showCustomNotification('top-left')">
               Show Top-Left
             </bs-button>
           </div>
           <div class="col-12 col-md-6 col-xl mt-3 mt-xl-0">
-            <bs-button color="info" @click="showCustomNotification('top-center')">
+            <bs-button
+              color="info" 
+              @click="showCustomNotification('top-center')">
               Show Top-Center
             </bs-button>
           </div>
           <div class="col-12 col-md-6 col-xl mt-3 mt-md-0">
-            <bs-button color="info" @click="showCustomNotification('top-right')">
+            <bs-button
+              color="info" 
+              @click="showCustomNotification('top-right')">
               Show Top-Right
             </bs-button>
           </div>
           <div class="col-12 col-md-6 col-xl mt-3 mt-xl-0">
-            <bs-button color="info" @click="showCustomNotification('top-full-width')">
+            <bs-button
+              color="info" 
+              @click="showCustomNotification('top-full-width')">
               Show Top Full Width
             </bs-button>
           </div>
         </div>
         <div class="row">
           <div class="col-12 col-md-6 col-xl mt-3">
-            <bs-button color="info" @click="showCustomNotification('bottom-left')">
+            <bs-button
+              color="info" 
+              @click="showCustomNotification('bottom-left')">
               Show Bottom-Left
             </bs-button>
           </div>
           <div class="col-12 col-md-6 col-xl mt-3">
-            <bs-button color="info" @click="showCustomNotification('bottom-center')">
+            <bs-button
+              color="info" 
+              @click="showCustomNotification('bottom-center')">
               Show Bottom-Center
             </bs-button>
           </div>
           <div class="col-12 col-md-6 col-xl mt-3">
-            <bs-button color="info" @click="showCustomNotification('bottom-right')">
+            <bs-button
+              color="info" 
+              @click="showCustomNotification('bottom-right')">
               Show Bottom-Right
             </bs-button>
           </div>
           <div class="col-12 col-md-6 col-xl mt-3">
-            <bs-button color="info" @click="showCustomNotification('bottom-full-width')">
+            <bs-button
+              color="info" 
+              @click="showCustomNotification('bottom-full-width')">
               Show Bottom Full Width
             </bs-button>
           </div>

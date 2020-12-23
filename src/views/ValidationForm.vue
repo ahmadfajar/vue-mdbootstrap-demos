@@ -7,66 +7,72 @@
       <bs-card-body>
         <form novalidate>
           <div class="form-group">
-            <bs-text-field v-model="user.fullName"
-                           :external-validator="fullNameValidator"
-                           prepend-icon="user"
-                           autofocus
-                           required
-                           floating-label>
+            <bs-text-field
+              v-model="user.fullName"
+              :external-validator="fullNameValidator"
+              prepend-icon="user"
+              autofocus
+              required
+              floating-label>
               <label>
                 Full Name
               </label>
             </bs-text-field>
           </div>
           <div class="form-group">
-            <bs-text-field v-model="user.email"
-                           :external-validator="emailValidator"
-                           type="email"
-                           prepend-icon="envelope"
-                           required
-                           floating-label>
+            <bs-text-field
+              v-model="user.email"
+              :external-validator="emailValidator"
+              type="email"
+              prepend-icon="envelope"
+              required
+              floating-label>
               <label>
                 Email
               </label>
             </bs-text-field>
           </div>
           <div class="form-group">
-            <bs-radio-group v-model="user.education"
-                            :external-validator="educationValidator"
-                            :items="educations"
-                            color="indigo">
+            <bs-radio-group
+              v-model="user.education"
+              :external-validator="educationValidator"
+              :items="educations"
+              color="indigo">
               <label class="col-12 col-form-label">
                 Last Education
               </label>
             </bs-radio-group>
           </div>
           <div class="form-group">
-            <bs-text-area v-model="user.address"
-                          :external-validator="addressValidator"
-                          prepend-icon="house-user"
-                          clear-button
-                          floating-label>
+            <bs-text-area
+              v-model="user.address"
+              :external-validator="addressValidator"
+              prepend-icon="house-user"
+              clear-button
+              floating-label>
               <label>
                 Address
               </label>
             </bs-text-area>
           </div>
           <div class="form-group">
-            <bs-combobox v-model="user.country"
-                         :data-source="countrySrc"
-                         :external-validator="countryValidator"
-                         floating-label>
+            <bs-combobox
+              v-model="user.country"
+              :data-source="countrySrc"
+              :external-validator="countryValidator"
+              floating-label>
               <label>
                 Country
               </label>
             </bs-combobox>
           </div>
           <div class="form-group">
-            <bs-combobox v-model="user.state"
-                         :data-source="stateSrc"
-                         :parent-value="user.country"
-                         :external-validator="stateValidator"
-                         floating-label>
+            <bs-combobox
+              v-model="user.state"
+              :data-source="stateSrc"
+              :parent-value="user.country"
+              :external-validator="stateValidator"
+              floating-label>
               <label>
                 State
               </label>
@@ -80,8 +86,9 @@
         </bs-button>
       </bs-card-footer>
     </bs-card>
-    <bs-mask-loader :show="loader"
-                    :spinner-diameter="50" />
+    <bs-mask-loader
+      :show="loader"
+      :spinner-diameter="50" />
   </section>
 </template>
 

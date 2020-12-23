@@ -1,19 +1,32 @@
-# Vue MdBootstrap Demos
+# Vue MDBootstrap Demos
 
 This is a demo of how to use the 
-**[Vue MdBootstrap](https://github.com/ahmadfajar/vue-mdbootstrap)**. 
-In this demo, you can find examples of using each of the **Vue MdBootstrap** components.
+**[Vue MDBootstrap](https://github.com/ahmadfajar/vue-mdbootstrap)**. 
+In this demo, you can find examples of using each of the **Vue MDBootstrap** components.
 
-## How to run the demo
 
-Create a directory `mdbootstrap-demo` under your apache web-root folder. Clone this demos to 
-the directory you've created. While still in the project directory, runs commands below:
+## How to install
+
+Use `yarn` to build the project.
+
+### Install dependencies
+
 ```shell script
 yarn install
-yarn dev
 ```
 
-Wait till the demo compilation finished. Then you can point your browser to the address
-`http://localhost/mdbootstrap-demo`.
+### Run demos on local development server
 
-Oh, btw, u can make this demos as your own playground too. Have a nice try. 
+```shell script
+yarn run serve
+```
+
+### Build demos for production
+
+```shell script
+yarn run build
+```
+
+Then copy the `dist` folder to http-server web folder.
+
+Oh, btw, u can make this demos as your own playground too. Have a nice try.

@@ -1,27 +1,33 @@
 <template>
-  <section class="mx-2 mx-md-4 my-3 my-md-4">
+  <section class="mx-2 mx-md-3 mx-xl-5 my-3 my-md-4">
     <bs-card shadow>
-      <bs-grid :data-source="gridSources"
-               :filterable="{operator: 'contains'}"
-               pageable
-               row-hover
-               sortable>
-        <bs-grid-column text-align="right"
-                        width="50"
-                        row-numbering />
-        <bs-grid-column field="value"
-                        label="ID"
-                        width="75" />
-        <bs-grid-column field="text"
-                        label="State Name"
-                        min-width="150" />
-        <bs-grid-column field="country"
-                        label="Country ID"
-                        text-align="center"
-                        width="125" />
-        <bs-grid-column field="description"
-                        label="Comments"
-                        min-width="150" />
+      <bs-grid
+        :data-source="gridSources"
+        :filterable="{operator: 'contains'}"
+        pageable
+        row-hover
+        sortable>
+        <bs-grid-column
+          text-align="right"
+          width="50"
+          row-numbering />
+        <bs-grid-column
+          field="value"
+          label="ID"
+          width="75" />
+        <bs-grid-column
+          field="text"
+          label="State Name"
+          min-width="150" />
+        <bs-grid-column
+          field="country"
+          label="Country ID"
+          text-align="center"
+          width="125" />
+        <bs-grid-column
+          field="description"
+          label="Comments"
+          min-width="150" />
       </bs-grid>
     </bs-card>
   </section>

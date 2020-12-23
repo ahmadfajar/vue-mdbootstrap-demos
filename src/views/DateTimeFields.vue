@@ -1,5 +1,5 @@
 <template>
-  <section class="mx-2 mx-md-4 my-3 my-md-4">
+  <section class="mx-2 mx-md-3 mx-xl-5 my-3 my-md-4">
     <div class="row">
       <div class="col-lg-6">
         <bs-card shadow>
@@ -7,53 +7,72 @@
           <bs-card-body>
             <div class="form-group">
               <bs-date-time-field v-model="date1" :value-format="dateFmt">
-                <label class="col-md-3 col-form-label" slot-scope="{ id }" :for="id">
+                <label
+                  slot-scope="{ id }"
+                  :for="id"
+                  class="col-md-3 col-form-label">
                   DateTime Field
                 </label>
               </bs-date-time-field>
             </div>
             <div class="form-group">
-              <bs-date-time-field v-model="date1"
-                                  :value-format="dateFmt"
-                                  placeholder="Field placeholder"
-                                  help-text="This is help text.">
-                <label class="col-md-3 col-form-label" slot-scope="{ id }" :for="id">
+              <bs-date-time-field
+                v-model="date1"
+                :value-format="dateFmt"
+                placeholder="Field placeholder"
+                help-text="This is help text.">
+                <label
+                  slot-scope="{ id }"
+                  :for="id"
+                  class="col-md-3 col-form-label">
                   DateTime Field
                 </label>
               </bs-date-time-field>
             </div>
             <div class="form-group">
-              <bs-date-time-field v-model="datetime1"
-                                  :value-format="datetimeFmt"
-                                  :display-format="displayTimeFmt"
-                                  :help-text="msgInitialValue"
-                                  clear-button>
-                <label class="col-md-3 col-form-label" slot-scope="{ id }" :for="id">
+              <bs-date-time-field
+                v-model="datetime1"
+                :value-format="datetimeFmt"
+                :display-format="displayTimeFmt"
+                :help-text="msgInitialValue"
+                clear-button>
+                <label
+                  slot-scope="{ id }"
+                  :for="id"
+                  class="col-md-3 col-form-label">
                   DateTime Field
                 </label>
               </bs-date-time-field>
             </div>
             <div class="form-group">
-              <bs-date-time-field v-model="month1"
-                                  :value-format="monthFmt"
-                                  :display-format="displayMonthFmt"
-                                  :help-text="msgPrependIcon"
-                                  prepend-icon="building"
-                                  view-mode="month"
-                                  clear-button>
-                <label class="col-md-3 col-form-label" slot-scope="{ id }" :for="id">
+              <bs-date-time-field
+                v-model="month1"
+                :value-format="monthFmt"
+                :display-format="displayMonthFmt"
+                :help-text="msgPrependIcon"
+                prepend-icon="building"
+                view-mode="month"
+                clear-button>
+                <label
+                  slot-scope="{ id }"
+                  :for="id"
+                  class="col-md-3 col-form-label">
                   DateTime Field
                 </label>
               </bs-date-time-field>
             </div>
             <div class="form-group">
-              <bs-date-time-field v-model="year1"
-                                  :help-text="msgCustomIcon"
-                                  append-icon="calendar"
-                                  value-format="YYYY"
-                                  view-mode="year"
-                                  clear-button>
-                <label class="col-md-3 col-form-label" slot-scope="{ id }" :for="id">
+              <bs-date-time-field
+                v-model="year1"
+                :help-text="msgCustomIcon"
+                append-icon="calendar"
+                value-format="YYYY"
+                view-mode="year"
+                clear-button>
+                <label
+                  slot-scope="{ id }"
+                  :for="id"
+                  class="col-md-3 col-form-label">
                   DateTime Field
                 </label>
               </bs-date-time-field>
@@ -67,57 +86,64 @@
           <bs-card-header>Floating Label</bs-card-header>
           <bs-card-body>
             <div class="form-group">
-              <bs-date-time-field v-model="date1" :value-format="dateFmt" floating-label>
+              <bs-date-time-field
+                v-model="date1"
+                :value-format="dateFmt"
+                floating-label>
                 <label slot-scope="{ id }" :for="id">
                   DateTime Field
                 </label>
               </bs-date-time-field>
             </div>
             <div class="form-group">
-              <bs-date-time-field v-model="date1"
-                                  :value-format="dateFmt"
-                                  placeholder="Field placeholder"
-                                  help-text="This is help text."
-                                  floating-label>
+              <bs-date-time-field
+                v-model="date1"
+                :value-format="dateFmt"
+                placeholder="Field placeholder"
+                help-text="This is help text."
+                floating-label>
                 <label slot-scope="{ id }" :for="id">
                   DateTime Field
                 </label>
               </bs-date-time-field>
             </div>
             <div class="form-group">
-              <bs-date-time-field v-model="datetime1"
-                                  :value-format="datetimeFmt"
-                                  :display-format="displayTimeFmt"
-                                  :help-text="msgInitialValue"
-                                  clear-button
-                                  floating-label>
+              <bs-date-time-field
+                v-model="datetime1"
+                :value-format="datetimeFmt"
+                :display-format="displayTimeFmt"
+                :help-text="msgInitialValue"
+                clear-button
+                floating-label>
                 <label slot-scope="{ id }" :for="id">
                   DateTime Field
                 </label>
               </bs-date-time-field>
             </div>
             <div class="form-group">
-              <bs-date-time-field v-model="month1"
-                                  :value-format="monthFmt"
-                                  :display-format="displayMonthFmt"
-                                  :help-text="msgPrependIcon"
-                                  prepend-icon="building"
-                                  view-mode="month"
-                                  clear-button
-                                  floating-label>
+              <bs-date-time-field
+                v-model="month1"
+                :value-format="monthFmt"
+                :display-format="displayMonthFmt"
+                :help-text="msgPrependIcon"
+                prepend-icon="building"
+                view-mode="month"
+                clear-button
+                floating-label>
                 <label slot-scope="{ id }" :for="id">
                   DateTime Field
                 </label>
               </bs-date-time-field>
             </div>
             <div class="form-group">
-              <bs-date-time-field v-model="year1"
-                                  :help-text="msgCustomIcon"
-                                  value-format="YYYY"
-                                  append-icon="calendar"
-                                  view-mode="year"
-                                  clear-button
-                                  floating-label>
+              <bs-date-time-field
+                v-model="year1"
+                :help-text="msgCustomIcon"
+                value-format="YYYY"
+                append-icon="calendar"
+                view-mode="year"
+                clear-button
+                floating-label>
                 <label slot-scope="{ id }" :for="id">
                   DateTime Field
                 </label>
@@ -133,66 +159,71 @@
           <bs-card-header>Outline DateTime Field</bs-card-header>
           <bs-card-body>
             <div class="form-group">
-              <bs-date-time-field v-model="date1"
-                                  :value-format="dateFmt"
-                                  outlined
-                                  floating-label>
+              <bs-date-time-field
+                v-model="date1"
+                :value-format="dateFmt"
+                outlined
+                floating-label>
                 <label slot-scope="{ id }" :for="id">
                   DateTime Field
                 </label>
               </bs-date-time-field>
             </div>
             <div class="form-group">
-              <bs-date-time-field v-model="date1"
-                                  :value-format="dateFmt"
-                                  placeholder="Field placeholder"
-                                  help-text="DatePicker with landscape mode."
-                                  outlined
-                                  landscape-mode
-                                  floating-label>
+              <bs-date-time-field
+                v-model="date1"
+                :value-format="dateFmt"
+                placeholder="Field placeholder"
+                help-text="DatePicker with landscape mode."
+                outlined
+                landscape-mode
+                floating-label>
                 <label slot-scope="{ id }" :for="id">
                   DateTime Field
                 </label>
               </bs-date-time-field>
             </div>
             <div class="form-group">
-              <bs-date-time-field v-model="datetime1"
-                                  :value-format="datetimeFmt"
-                                  :display-format="displayTimeFmt"
-                                  :help-text="msgInitialValue"
-                                  color="deep-purple"
-                                  clear-button
-                                  outlined
-                                  floating-label>
+              <bs-date-time-field
+                v-model="datetime1"
+                :value-format="datetimeFmt"
+                :display-format="displayTimeFmt"
+                :help-text="msgInitialValue"
+                color="deep-purple"
+                clear-button
+                outlined
+                floating-label>
                 <label slot-scope="{ id }" :for="id">
                   DateTime Field
                 </label>
               </bs-date-time-field>
             </div>
             <div class="form-group">
-              <bs-date-time-field v-model="month1"
-                                  :value-format="monthFmt"
-                                  :display-format="displayMonthFmt"
-                                  :help-text="msgPrependIcon"
-                                  prepend-icon="building"
-                                  view-mode="month"
-                                  clear-button
-                                  outlined
-                                  floating-label>
+              <bs-date-time-field
+                v-model="month1"
+                :value-format="monthFmt"
+                :display-format="displayMonthFmt"
+                :help-text="msgPrependIcon"
+                prepend-icon="building"
+                view-mode="month"
+                clear-button
+                outlined
+                floating-label>
                 <label slot-scope="{ id }" :for="id">
                   DateTime Field
                 </label>
               </bs-date-time-field>
             </div>
             <div class="form-group">
-              <bs-date-time-field v-model="year1"
-                                  :help-text="msgCustomIcon"
-                                  value-format="YYYY"
-                                  append-icon="calendar"
-                                  view-mode="year"
-                                  clear-button
-                                  outlined
-                                  floating-label>
+              <bs-date-time-field
+                v-model="year1"
+                :help-text="msgCustomIcon"
+                value-format="YYYY"
+                append-icon="calendar"
+                view-mode="year"
+                clear-button
+                outlined
+                floating-label>
                 <label slot-scope="{ id }" :for="id">
                   DateTime Field
                 </label>
@@ -206,22 +237,40 @@
           <bs-card-header>Standard DateTimeField with State</bs-card-header>
           <bs-card-body>
             <div class="form-group">
-              <bs-date-time-field v-model="date2" :value-format="dateFmt" clear-button>
-                <label class="col-md-3 col-form-label" slot-scope="{ id }" :for="id">
+              <bs-date-time-field
+                v-model="date2"
+                :value-format="dateFmt"
+                clear-button>
+                <label
+                  slot-scope="{ id }"
+                  :for="id"
+                  class="col-md-3 col-form-label">
                   State Enabled
                 </label>
               </bs-date-time-field>
             </div>
             <div class="form-group">
-              <bs-date-time-field v-model="date2" :value-format="dateFmt" readonly>
-                <label class="col-md-3 col-form-label" slot-scope="{ id }" :for="id">
+              <bs-date-time-field
+                v-model="date2"
+                :value-format="dateFmt"
+                readonly>
+                <label
+                  slot-scope="{ id }"
+                  :for="id"
+                  class="col-md-3 col-form-label">
                   State Readonly
                 </label>
               </bs-date-time-field>
             </div>
             <div class="form-group">
-              <bs-date-time-field v-model="date2" :value-format="dateFmt" disabled>
-                <label class="col-md-3 col-form-label" slot-scope="{ id }" :for="id">
+              <bs-date-time-field
+                v-model="date2"
+                :value-format="dateFmt"
+                disabled>
+                <label
+                  slot-scope="{ id }"
+                  :for="id"
+                  class="col-md-3 col-form-label">
                   State Disabled
                 </label>
               </bs-date-time-field>
@@ -232,30 +281,33 @@
           <bs-card-header>Floating Label with State</bs-card-header>
           <bs-card-body>
             <div class="form-group">
-              <bs-date-time-field v-model="date3" 
-                                  :value-format="dateFmt"
-                                  clear-button
-                                  floating-label>
+              <bs-date-time-field
+                v-model="date3" 
+                :value-format="dateFmt"
+                clear-button
+                floating-label>
                 <label slot-scope="{ id }" :for="id">
                   State Enabled
                 </label>
               </bs-date-time-field>
             </div>
             <div class="form-group">
-              <bs-date-time-field v-model="date3" 
-                                  :value-format="dateFmt"
-                                  floating-label
-                                  readonly>
+              <bs-date-time-field
+                v-model="date3" 
+                :value-format="dateFmt"
+                floating-label
+                readonly>
                 <label slot-scope="{ id }" :for="id">
                   State Readonly
                 </label>
               </bs-date-time-field>
             </div>
             <div class="form-group">
-              <bs-date-time-field v-model="date3" 
-                                  :value-format="dateFmt"
-                                  floating-label
-                                  disabled>
+              <bs-date-time-field
+                v-model="date3" 
+                :value-format="dateFmt"
+                floating-label
+                disabled>
                 <label slot-scope="{ id }" :for="id">
                   State Disabled
                 </label>

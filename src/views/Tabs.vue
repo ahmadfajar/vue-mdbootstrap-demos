@@ -1,19 +1,25 @@
 <template>
-  <section class="mx-2 mx-md-4 my-3 my-md-4">
+  <section class="mx-2 mx-md-3 mx-xl-5 my-3 my-md-4">
     <div class="row justify-content-center">
       <div class="col-md-6">
         <h5 class="mb-3">
           Basic Bootstrap Style
         </h5>
         <bs-card class="mb-3" shadow>
-          <bs-tabs v-model="activeTab" inner-class="card-header">
+          <bs-tabs
+            v-model="activeTab" 
+            inner-class="card-header">
             <bs-tab label="Home" icon="home">
               {{ homeTab }}
             </bs-tab>
-            <bs-tab label="Profile" icon="user">
+            <bs-tab
+              label="Profile" 
+              icon="user">
               {{ profileTab }}
             </bs-tab>
-            <bs-tab label="Contact" icon="address-card">
+            <bs-tab
+              label="Contact" 
+              icon="address-card">
               {{ contactTab }}
             </bs-tab>
           </bs-tabs>
@@ -23,10 +29,11 @@
           Bootstrap Pill Style
         </h5>
         <bs-card class="mb-3" shadow>
-          <bs-tabs v-model="activeTab"
-                   alignment="center"
-                   inner-class="card-header"
-                   variant="pills">
+          <bs-tabs
+            v-model="activeTab"
+            alignment="center"
+            inner-class="card-header"
+            variant="pills">
             <bs-tab label="Home" icon="home">
               {{ homeTab }}
             </bs-tab>
@@ -43,10 +50,11 @@
           Material Style
         </h5>
         <bs-card class="mb-3" shadow>
-          <bs-tabs v-model="activeTab"
-                   variant="material"
-                   alignment="right"
-                   color="primary">
+          <bs-tabs
+            v-model="activeTab"
+            variant="material"
+            alignment="right"
+            color="primary">
             <bs-tab label="Home" icon="home">
               {{ homeTab }}
             </bs-tab>
@@ -63,10 +71,11 @@
           Modern Style
         </h5>
         <bs-card class="mb-3" shadow>
-          <bs-tabs v-model="activeTab"
-                   variant="modern"
-                   color="deep-purple"
-                   alignment="justified">
+          <bs-tabs
+            v-model="activeTab"
+            variant="modern"
+            color="deep-purple"
+            alignment="justified">
             <bs-tab label="Home" icon="home">
               {{ homeTab }}
             </bs-tab>
@@ -85,11 +94,12 @@
           Placement Top
         </h5>
         <bs-card class="mb-3" shadow>
-          <bs-tabs v-model="activeTab"
-                   variant="pills"
-                   alignment="justified"
-                   tab-position="top"
-                   content-transition="slide-fade">
+          <bs-tabs
+            v-model="activeTab"
+            variant="pills"
+            alignment="justified"
+            tab-position="top"
+            content-transition="slide-fade">
             <bs-tab label="Home" icon="home">
               {{ homeTab }}
             </bs-tab>
@@ -106,10 +116,11 @@
           Placement Bottom
         </h5>
         <bs-card class="mb-3" shadow>
-          <bs-tabs v-model="activeTab"
-                   inner-class="card-footer"
-                   tab-position="bottom"
-                   content-transition="popover">
+          <bs-tabs
+            v-model="activeTab"
+            inner-class="card-footer"
+            tab-position="bottom"
+            content-transition="popover">
             <bs-tab label="Home" icon="home">
               {{ homeTab }}
             </bs-tab>
@@ -126,11 +137,12 @@
           Placement Left
         </h5>
         <bs-card class="mb-3" shadow>
-          <bs-tabs v-model="activeTab"
-                   variant="modern"
-                   color="purple"
-                   alignment="center"
-                   tab-position="left">
+          <bs-tabs
+            v-model="activeTab"
+            variant="modern"
+            color="purple"
+            alignment="center"
+            tab-position="left">
             <bs-tab label="Home" icon="home">
               {{ homeTab }}
             </bs-tab>
@@ -147,11 +159,12 @@
           Placement Right
         </h5>
         <bs-card class="mb-3" shadow>
-          <bs-tabs v-model="activeTab"
-                   variant="modern"
-                   color="indigo"
-                   alignment="center"
-                   tab-position="right">
+          <bs-tabs
+            v-model="activeTab"
+            variant="modern"
+            color="indigo"
+            alignment="center"
+            tab-position="right">
             <bs-tab label="Home" icon="home">
               {{ homeTab }}
             </bs-tab>
@@ -171,52 +184,57 @@
         </h5>
         <bs-card shadow>
           <bs-card-body>
-            <bs-tabs v-model="activeTab"
-                     variant="material"
-                     alignment="center"
-                     color="info-color-dark"
-                     icon-position="top"
-                     icon-size="lg">
+            <bs-tabs
+              v-model="activeTab"
+              variant="material"
+              alignment="center"
+              color="info-color-dark"
+              icon-position="top"
+              icon-size="lg">
               <bs-tab label="Home" icon="home" />
               <bs-tab label="Profile" icon="user" />
               <bs-tab label="Contact" icon="address-card" />
             </bs-tabs>
-            <bs-tabs v-model="activeTab"
-                     variant="material"
-                     alignment="center"
-                     color="success-color-dark"
-                     icon-position="bottom"
-                     icon-size="lg">
+            <bs-tabs
+              v-model="activeTab"
+              variant="material"
+              alignment="center"
+              color="success-color-dark"
+              icon-position="bottom"
+              icon-size="lg">
               <bs-tab label="Home" icon="home" />
               <bs-tab label="Profile" icon="user" />
               <bs-tab label="Contact" icon="address-card" />
             </bs-tabs>
-            <bs-tabs v-model="activeTab"
-                     variant="modern"
-                     alignment="center"
-                     color="teal"
-                     icon-position="left"
-                     icon-size="lg">
+            <bs-tabs
+              v-model="activeTab"
+              variant="modern"
+              alignment="center"
+              color="teal"
+              icon-position="left"
+              icon-size="lg">
               <bs-tab label="Home" icon="home" />
               <bs-tab label="Profile" icon="user" />
               <bs-tab label="Contact" icon="address-card" />
             </bs-tabs>
-            <bs-tabs v-model="activeTab"
-                     variant="modern"
-                     color="blue-green"
-                     alignment="center"
-                     icon-position="right"
-                     icon-size="lg">
+            <bs-tabs
+              v-model="activeTab"
+              variant="modern"
+              color="blue-green"
+              alignment="center"
+              icon-position="right"
+              icon-size="lg">
               <bs-tab label="Home" icon="home" />
               <bs-tab label="Profile" icon="user" />
               <bs-tab label="Contact" icon="address-card" />
             </bs-tabs>
-            <bs-tabs v-model="activeTab"
-                     variant="modern"
-                     color="unique"
-                     alignment="center"
-                     icon-size="2x"
-                     content-class="p-0">
+            <bs-tabs
+              v-model="activeTab"
+              variant="modern"
+              color="unique"
+              alignment="center"
+              icon-size="2x"
+              content-class="p-0">
               <bs-tab icon="home" />
               <bs-tab icon="user" />
               <bs-tab icon="address-card" />

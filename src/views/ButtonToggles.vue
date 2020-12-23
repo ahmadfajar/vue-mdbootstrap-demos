@@ -1,5 +1,5 @@
 <template>
-  <section class="mx-2 mx-md-4 my-3 my-md-4">
+  <section class="mx-2 mx-md-3 mx-xl-5 my-3 my-md-4">
     <bs-card shadow>
       <bs-card-header>Standard Toggle</bs-card-header>
       <bs-card-body>
@@ -19,11 +19,12 @@
             How is the weather today
           </label>
           <div class="col-md-10">
-            <bs-button-toggle v-model="selectedWeather"
-                              :items="weathers"
-                              color="info"
-                              toggle-color="indigo"
-                              icon-position="right" />
+            <bs-button-toggle
+              v-model="selectedWeather"
+              :items="weathers"
+              color="info"
+              toggle-color="indigo"
+              icon-position="right" />
           </div>
         </div>
 
@@ -35,7 +36,10 @@
             What are you drinking?
           </label>
           <div class="col-md-10">
-            <bs-button-toggle v-model="selectedDrink" :items="drinks" readonly />
+            <bs-button-toggle
+              v-model="selectedDrink"
+              :items="drinks"
+              readonly />
           </div>
         </div>
         <div class="mb-2 row">
@@ -43,12 +47,13 @@
             How is the weather today
           </label>
           <div class="col-md-10">
-            <bs-button-toggle v-model="selectedWeather"
-                              :items="weathers"
-                              color="info"
-                              toggle-color="indigo"
-                              icon-position="left"
-                              readonly />
+            <bs-button-toggle
+              v-model="selectedWeather"
+              :items="weathers"
+              color="info"
+              toggle-color="indigo"
+              icon-position="left"
+              readonly />
           </div>
         </div>
 
@@ -60,7 +65,10 @@
             What are you drinking?
           </label>
           <div class="col-md-10">
-            <bs-button-toggle v-model="selectedDrink" :items="drinks" disabled />
+            <bs-button-toggle
+              v-model="selectedDrink"
+              :items="drinks"
+              disabled />
           </div>
         </div>
         <div class="row">
@@ -68,7 +76,10 @@
             How is the weather today
           </label>
           <div class="col-md-10">
-            <bs-button-toggle v-model="selectedWeather" :items="weathers" disabled />
+            <bs-button-toggle
+              v-model="selectedWeather"
+              :items="weathers"
+              disabled />
           </div>
         </div>
       </bs-card-body>
@@ -85,7 +96,10 @@
             What are you drinking?
           </label>
           <div class="col-md-10">
-            <bs-button-toggle v-model="selectedDrink" :items="drinks" raised />
+            <bs-button-toggle
+              v-model="selectedDrink"
+              :items="drinks"
+              raised />
           </div>
         </div>
         <div class="mb-2 row">
@@ -93,12 +107,13 @@
             How is the weather today
           </label>
           <div class="col-md-10">
-            <bs-button-toggle v-model="selectedWeather"
-                              :items="weathers"
-                              color="info"
-                              toggle-color="indigo"
-                              icon-position="right"
-                              raised />
+            <bs-button-toggle
+              v-model="selectedWeather"
+              :items="weathers"
+              color="info"
+              toggle-color="indigo"
+              icon-position="right"
+              raised />
           </div>
         </div>
 
@@ -110,7 +125,10 @@
             What are you drinking?
           </label>
           <div class="col-md-10">
-            <bs-button-toggle v-model="selectedDrink" :items="drinks" outlined />
+            <bs-button-toggle
+              v-model="selectedDrink"
+              :items="drinks"
+              outlined />
           </div>
         </div>
         <div class="mb-2 row">
@@ -118,12 +136,13 @@
             How is the weather today
           </label>
           <div class="col-md-10">
-            <bs-button-toggle v-model="selectedWeather"
-                              :items="weathers"
-                              color="info"
-                              toggle-color="indigo"
-                              icon-position="right"
-                              outlined />
+            <bs-button-toggle
+              v-model="selectedWeather"
+              :items="weathers"
+              color="info"
+              toggle-color="indigo"
+              icon-position="right"
+              outlined />
           </div>
         </div>
 
@@ -135,7 +154,10 @@
             What are you drinking?
           </label>
           <div class="col-md-10">
-            <bs-button-toggle v-model="selectedDrink" :items="drinks" flat />
+            <bs-button-toggle
+              v-model="selectedDrink"
+              :items="drinks"
+              flat />
           </div>
         </div>
         <div class="row">
@@ -143,12 +165,13 @@
             How is the weather today
           </label>
           <div class="col-md-10">
-            <bs-button-toggle v-model="selectedWeather"
-                              :items="weathers"
-                              color="info"
-                              toggle-color="indigo"
-                              icon-position="right"
-                              flat />
+            <bs-button-toggle
+              v-model="selectedWeather"
+              :items="weathers"
+              color="info"
+              toggle-color="indigo"
+              icon-position="right"
+              flat />
           </div>
         </div>
       </bs-card-body>

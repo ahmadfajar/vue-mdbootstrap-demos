@@ -1,1 +1,4 @@
+public/index.html
 webpack.config.js
+babel.config.js
+vue.config.js

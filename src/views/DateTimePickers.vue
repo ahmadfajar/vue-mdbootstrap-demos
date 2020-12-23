@@ -1,5 +1,5 @@
 <template>
-  <section class="mx-2 mx-md-4 my-3 my-md-4">
+  <section class="mx-2 mx-md-3 mx-xl-5 my-3 my-md-4">
     <bs-card shadow>
       <bs-card-body>
         <div class="row">
@@ -13,7 +13,10 @@
             <bs-card-content type="title" class="mt-3 mt-lg-0">
               Landscape
             </bs-card-content>
-            <bs-date-picker v-model="date1" format="LLL" landscape />
+            <bs-date-picker
+              v-model="date1"
+              format="LLL"
+              landscape />
           </div>
         </div>
         <div class="row mt-3">
@@ -21,27 +24,30 @@
             <bs-card-content type="title">
               Year Picker
             </bs-card-content>
-            <bs-date-picker v-model="year1"
-                            format="YYYY"
-                            view-mode="year"
-                            color="purple" />
+            <bs-date-picker
+              v-model="year1"
+              format="YYYY"
+              view-mode="year"
+              color="purple" />
           </div>
           <div class="col-lg">
             <bs-card-content type="title" class="mt-3 mt-lg-0">
               Month Picker
             </bs-card-content>
-            <bs-date-picker v-model="month1" 
-                            view-mode="month"
-                            color="deep-purple" />
+            <bs-date-picker
+              v-model="month1" 
+              view-mode="month"
+              color="deep-purple" />
           </div>
           <div class="col-lg">
             <bs-card-content type="title" class="mt-3 mt-lg-0">
               Time Picker
             </bs-card-content>
-            <bs-date-picker v-model="time1"
-                            format="HH:mm:ss"
-                            view-mode="time"
-                            color="dark-blue" />
+            <bs-date-picker
+              v-model="time1"
+              format="HH:mm:ss"
+              view-mode="time"
+              color="dark-blue" />
           </div>
         </div>
       </bs-card-body>

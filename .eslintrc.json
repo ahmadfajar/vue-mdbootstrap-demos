@@ -105,10 +105,10 @@
         "vue/max-attributes-per-line": [
             "warn",
             {
-                "singleline": 3,
+                "singleline": 2,
                 "multiline": {
                     "max": 1,
-                    "allowFirstLine": true
+                    "allowFirstLine": false
                 }
             }
         ],

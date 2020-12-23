@@ -1,5 +1,5 @@
 <template>
-  <section class="mx-2 mx-md-4 my-3 my-md-4">
+  <section class="mx-2 mx-md-3 mx-xl-5 my-3 my-md-4">
     <bs-card tag="article" shadow>
       <bs-card-header>Determinate</bs-card-header>
       <bs-card-body class="row">
@@ -7,22 +7,33 @@
           <div class="font-weight-bold">
             Bar
           </div>
-          <bs-progress :value="amount1" mode="determinate" type="bar" />
+          <bs-progress
+            :value="amount1"
+            mode="determinate"
+            class="mb-2" />
           <div>&nbsp;</div>
-          <bs-progress :value="amount1"
-                       mode="determinate"
-                       type="bar"
-                       color="info" />
+          <bs-progress
+            :value="amount1"
+            mode="determinate"
+            color="info" />
         </div>
         <div class="col-12 col-xl text-center">
           <div class="font-weight-bold text-left text-xl-center">
             Spinner
           </div>
           <div class="p-3 d-inline-block">
-            <bs-progress :value="amount1" mode="determinate" color="purple" />
+            <bs-progress
+              :value="amount1"
+              type="spinner"
+              mode="determinate"
+              color="purple" />
           </div>
           <div class="p-3 d-inline-block">
-            <bs-progress :value="amount1" mode="determinate" color="red" />
+            <bs-progress
+              :value="amount1"
+              type="spinner"
+              mode="determinate"
+              color="red" />
           </div>
         </div>
 
@@ -36,38 +47,47 @@
           <div class="font-weight-bold">
             Bar
           </div>
-          <bs-progress :value="amount1"
-                       :height="10"
-                       mode="determinate"
-                       type="bar"
-                       color="teal" />
+          <bs-progress
+            :value="amount1"
+            :height="10"
+            class="mb-2"
+            mode="determinate"
+            color="teal" />
           <div>&nbsp;</div>
-          <bs-progress :value="amount1"
-                       :height="15"
-                       mode="determinate"
-                       type="bar"
-                       color="success" />
+          <bs-progress
+            :value="amount1"
+            :height="15"
+            mode="determinate"
+            color="success" />
         </div>
         <div class="col-12 col-xl text-center">
           <div class="font-weight-bold text-left text-xl-center">
             Spinner
           </div>
           <div class="p-3 d-inline-block">
-            <bs-progress :value="amount1"
-                         :diameter="90"
-                         :stroke="10"
-                         mode="determinate"
-                         color="danger" />
+            <bs-progress
+              :value="amount1"
+              :diameter="90"
+              :stroke="10"
+              type="spinner"
+              mode="determinate"
+              color="danger" />
           </div>
           <div class="p-3 d-inline-block">
-            <bs-progress :value="amount1"
-                         :diameter="80"
-                         :stroke="8"
-                         mode="determinate"
-                         color="deep-orange" />
+            <bs-progress
+              :value="amount1"
+              :diameter="80"
+              :stroke="8"
+              type="spinner"
+              mode="determinate"
+              color="deep-orange" />
           </div>
           <div class="p-3 d-inline-block">
-            <bs-progress :value="amount1" mode="determinate" color="amber" />
+            <bs-progress
+              :value="amount1"
+              type="spinner"
+              mode="determinate"
+              color="amber" />
           </div>
         </div>
 
@@ -77,8 +97,11 @@
             Progress Value
           </bs-card-content>
           <div class="d-flex">
-            <label class="mr-2">
-              <input type="range" v-model.number="amount1" />
+            <label class="mr-2" style="width: 60%">
+              <input
+                v-model.number="amount1"
+                type="range"
+                style="width: 100%" />
             </label>
             <span>{{ amount1 }}%</span>
           </div>
@@ -86,48 +109,62 @@
       </bs-card-body>
     </bs-card>
 
-    <bs-card tag="article" class="mt-3" shadow>
+    <bs-card
+      tag="article"
+      class="mt-3"
+      shadow>
       <bs-card-header>Indeterminate</bs-card-header>
       <bs-card-body class="row">
         <div class="col-12 col-xl mb-2">
           <div class="font-weight-bold">
             Bar
           </div>
-          <bs-progress type="bar" />
-          <div>&nbsp;</div>
-          <bs-progress :height="8" type="bar" color="info" />
+          <bs-progress type="bar" class="mb-2" />
+          <bs-progress :height="8" color="info" />
         </div>
         <div class="col-12 col-xl text-center">
           <div class="font-weight-bold text-left text-xl-center">
             Spinner
           </div>
           <div class="p-3 d-inline-block">
-            <bs-progress :diameter="90" :stroke="10" color="danger" />
+            <bs-progress
+              :diameter="90"
+              :stroke="10"
+              type="spinner"
+              color="danger" />
           </div>
           <div class="p-3 d-inline-block">
-            <bs-progress :diameter="80" :stroke="8" color="deep-orange" />
+            <bs-progress
+              :diameter="80"
+              :stroke="8"
+              type="spinner"
+              color="deep-orange" />
           </div>
           <div class="p-3 d-inline-block">
-            <bs-progress color="amber" />
+            <bs-progress color="amber" type="spinner" />
           </div>
         </div>
       </bs-card-body>
     </bs-card>
 
-    <bs-card tag="article" class="mt-3" shadow>
+    <bs-card
+      tag="article"
+      class="mt-3"
+      shadow>
       <bs-card-header>Buffer</bs-card-header>
       <bs-card-body class="row">
         <div class="col">
-          <bs-progress :value="amount2"
-                       :buffer="buffer"
-                       mode="buffer"
-                       type="bar" />
+          <bs-progress
+            :value="amount2"
+            :buffer="buffer"
+            class="mb-2"
+            mode="buffer" />
           <div>&nbsp;</div>
-          <bs-progress :value="amount2"
-                       :buffer="buffer"
-                       mode="buffer"
-                       type="bar"
-                       color="info" />
+          <bs-progress
+            :value="amount2"
+            :buffer="buffer"
+            mode="buffer"
+            color="info" />
         </div>
 
         <div class="col-12 mt-4">
@@ -136,8 +173,11 @@
             Progress Value
           </bs-card-content>
           <div class="d-flex mt-2">
-            <label class="mr-2">
-              <input type="range" v-model.number="amount2" />
+            <label class="mr-2" style="width: 60%">
+              <input
+                v-model.number="amount2"
+                type="range"
+                style="width: 100%" />
             </label>
             <span>{{ amount2 }}%</span>
           </div>
@@ -145,8 +185,11 @@
             Buffer Value
           </bs-card-content>
           <div class="d-flex mt-2">
-            <label class="mr-2">
-              <input type="range" v-model.number="buffer" />
+            <label class="mr-2" style="width: 60%">
+              <input
+                v-model.number="buffer"
+                type="range"
+                style="width: 100%" />
             </label>
             <span>{{ buffer }}%</span>
           </div>
